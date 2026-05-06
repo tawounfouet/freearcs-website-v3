@@ -2989,3 +2989,5 @@ See https://react.dev/link/invalid-hook-call for tips about how to debug and fix
 %s
  An error occurred in the <BrowserRouter> component. Consider adding an error boundary to your tree to customize error handling behavior.
 Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b1e380e:6965
+[59205167ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:3000/@vite/client:559
+[59205581ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b1e380e:20102
