@@ -1,0 +1,809 @@
+export const translations = {
+  fr: {
+    nav: {
+      home: "Accueil",
+      about: "À propos",
+      visionMission: "Qui sommes-nous ?",
+      founder: "Notre fondatrice",
+      whyChooseUs: "Pourquoi nous choisir ?",
+      services: "Services",
+      allServices: "Tous nos services",
+      legalRepresentation: "Représentation légale dans l'UE",
+      therapeuticExpertise: "Expertise Thérapeutique",
+      references: "Références",
+      blog: "Blog",
+      contact: "Contact",
+      contactUs: "Nous Contacter"
+    },
+    home: {
+      heroTitle: "CRO France - Accompagnement expert pour vos études cliniques de la Phase I à la post-commercialisation",
+      heroTitleLine1: "CRO France -",
+      heroTitleLine2: "Accompagnement expert",
+      heroTitleLine3: " pour vos études cliniques de la Phase I à la post-commercialisation",
+      heroSubtitle: "Freearcs Pharma Services est une société de recherche clinique sous contrat (CRO) française accompagnant les laboratoires pharmaceutiques, biotechs, medtech et promoteurs académiques dans la conduite de leurs études cliniques — de la soumission réglementaire au monitoring de site et à la gestion des données. Alliant expertise réglementaire, exécution opérationnelle et flexibilité.",
+      ctaDiscuss: "Discutez de votre projet",
+      ctaExplore: "Découvrez nos services",
+      memberOf: "Membre de",
+      whoWeAre: "Qui Sommes-Nous",
+      whoWeAreTagline: "Freearcs Pharma Services, l\u2019extension agile de votre équipe clinique.",
+      whoWeAreText: "CRO indépendante fondée en 2020, nous accompagnons laboratoires pharmaceutiques, biotechs, startups HealthTech et promoteurs académiques dans la conduite de leurs études cliniques.",
+      whoWeAreText2: "Notre modèle hybride associe l\u2019exigence des standards internationaux et la souplesse d\u2019une structure indépendante.",
+      whoWeAreLink: "En savoir plus sur Freearcs Pharma Services",
+      meetFounder: "Rencontrez notre fondatrice",
+      whatWeDo: "Pourquoi Nous Choisir",
+      whatWeDoText: "",
+      whatWeDoItems: [
+        "Modèle CRO indépendant, agile et flexible",
+        "Méthodes éprouvées sur protocoles complexes : Phase I, études pivots, oncologie, maladies rares",
+        "Accompagnement sur mesure : chaque mission alignée sur vos contraintes et objectifs",
+        "Maîtrise réglementaire : France, UE, exigences internationales",
+        "Expertise opérationnelle : Supervision senior et leadership opérationnel"
+      ],
+      operationalModel: "Modèle Opérationnel",
+      embeddedExecution: "Modèle d'exécution intégré : intégration directe au sein des équipes sponsor en tant que responsable opérationnel",
+      sponsorOversight: "Supervision côté sponsor : accompagnement des promoteurs dans la supervision de CROs externes — revue contractuelle, suivi KPI, conformité site, reporting réglementaire",
+      flexibleMonitoring: "Monitoring flexible : monitoring risk-based et à distance adapté au design de l'étude et au profil du site",
+      independentStructure: "Structure indépendante et adaptative : pas de cadre standardisé imposé — chaque engagement est construit autour des contraintes et objectifs du client",
+      coreServices: "Services Principaux",
+      projectManagement: "Gestion de projet",
+      projectManagementDesc: "Support au design d'étude — Coordination de projet — Gestion budget, planning et KPI — Coordination transversale",
+      regulatoryAffairs: "Affaires Réglementaires",
+      regulatoryAffairsDesc: "Expertise EU CTR 536/2014, MDR 745 et Directive 2010/63/EU — Soumissions via CTIS et autorités françaises (ANSM, CPP, ANSES, CNIL) — Déclaration de sécurité et suivi réglementaire",
+      contractBudget: "Contrat et Budget",
+      contractBudgetDesc: "Gestion des Clinical Trial Agreements — Négociation des accords sites investigateurs — Optimisation des délais de démarrage",
+      feasibilityMonitoring: "Faisabilité et Monitoring",
+      feasibilityMonitoringDesc: "Qualification stratégique des sites — Monitoring continu — Intégrité des données et conformité protocole",
+      siteSupport: "Support Site et Saisie Données",
+      siteSupportDesc: "Support au recrutement patient — Saisie de données et support opérationnel",
+      investigatorCompliance: "Conformité Investigateur",
+      investigatorComplianceDesc: "Suivi continu de la conformité — Respect des délais",
+      training: "Formation",
+      trainingDesc: "Formation avec transfert de connaissances — Mise en œuvre des bonnes pratiques (GCP/BPC)",
+      learnMore: "En savoir plus",
+      viewAllServices: "Voir tous les services",
+      therapeuticExpertise: "Expertise Thérapeutique",
+      oncology: "Oncologie",
+      cnsRareDiseases: "SNC & Maladies Rares",
+      cardiology: "Cardiologie",
+      dermatology: "Dermatologie",
+      infectiousDiseases: "Maladies Infectieuses",
+      pulmonology: "Pneumologie",
+      otherAreas: "Autres Domaines",
+      exploreExpertise: "Découvrir notre expertise thérapeutique",
+      whyChooseUs: "Pourquoi Nous Choisir",
+      whyChooseUsItems: [
+        "Modèle CRO agile et flexible",
+        "Forte exécution opérationnelle",
+        "Collaboration étroite avec les clients",
+        "Capacité à gérer des études complexes et innovantes",
+        "Expertise réglementaire française : ANSM, CPP, CTIS — incluant la procédure fast-track ANSM opérationnelle depuis mars 2026",
+        "Indépendance vis-à-vis de la rigidité des grandes CROs"
+      ],
+      whyChooseUsLink: "Pourquoi nous choisir",
+      references: "Références",
+      referencesText: "Plus de 30 projets cliniques supervisés, taux de fidélisation de 65 %. Découvrez nos collaborations avec des biotechs, des laboratoires et des CRO partenaires.",
+      scheduleTitle: "Vous préparez une étude clinique ?",
+      scheduleSubtitle: "Premier contact en moins de 48 h.",
+      scheduleStrategic: "Planifiez une discussion stratégique",
+      scheduleTailored: "adaptée à votre projet clinique",
+      bookMeeting: "Planifiez une discussion stratégique pour votre étude clinique",
+      ansm: {
+        title: "Procédure Fast-Track ANSM —",
+        subtitle: "opérationnelle depuis le 16 mars 2026",
+        text: "Freearcs Pharma Services accompagne les promoteurs dans la préparation et la soumission des demandes d'éligibilité dans le cadre du dispositif national fast-track, réduisant les délais d'autorisation de 106 jours à 49 jours — ou 14 jours sans questions.",
+        procedures: "Freearcs Pharma Services accompagne : préparation et soumission des demandes d'éligibilité dans le cadre du dispositif national fast-track. Études Phase I et I/II mononationales ciblant les maladies graves ou rares, mécanismes first-in-class, et inclusion adolescente."
+      },
+      talkToUs: "Parlons de votre étude clinique."
+    },
+    about: {
+      title: "Qui sommes-nous ? Freearcs Pharma Services, CRO française indépendante",
+      metaTitle: "Qui sommes-nous ? Freearcs Pharma Services, CRO française indépendante",
+      metaDescription: "CRO française indépendante fondée en 2020 par Nadège KAMBOU. Vision, mission, valeurs et fondatrice. La rigueur des grandes CRO, l'agilité d'un partenaire de proximité.",
+      heroTagline: "Plus qu'un prestataire, l'extension agile de votre équipe clinique",
+      intro: "Freearcs Pharma Services est une organisation de recherche sous contrat (CRO) qui accompagne les porteurs de projets en santé, notamment les biotechs, start-ups e-santé, medtechs, les laboratoires pharmaceutiques, les CROs internationales et locales, ainsi que les acteurs académiques, dans la stratégie et la conduite de leurs études cliniques.",
+      introText2: "Notre périmètre couvre l'ensemble du cycle : préparation stratégique, soumissions réglementaires, exécution opérationnelle, monitoring, gestion des données, formation. Sur les études interventionnelles, observationnelles et de données de vie réelle portant sur les médicaments, les dispositifs médicaux, et les hors produits de santé.",
+      introText3: "Fondée sur un modèle hybride unique, qui associe les méthodes éprouvées dans les CRO internationales et la souplesse d'une structure indépendante. Nous apportons la rigueur scientifique acquise au sein des leaders mondiaux du secteur, avec la flexibilité opérationnelle indispensable aux biotechs et medtechs innovantes.",
+      visionTitle: "Notre Vision",
+      visionText: "Devenir le partenaire de référence pour la recherche clinique en Europe et en Afrique Francophone. Reconnus pour notre expertise, notre rigueur scientifique et notre capacité à innover, nous visons à participer à la transformation des avancées scientifiques en solutions thérapeutiques concrètes pour le bien-être du patient.",
+      missionTitle: "Notre Mission",
+      missionText: "Parce que nous croyons que chaque maladie est curable, notre mission est d'unir notre expertise à la vôtre pour offrir à chaque patient une solution adaptée, qu'elle soit mécanique, chimique ou naturelle.",
+      signature: "A passion For Better Health",
+      valuesTitle: "Nos Valeurs",
+      values: [
+        { title: "Humanité et Confidentialité", text: "Une écoute active et un respect strict des données de santé." },
+        { title: "Rigueur et Expertise", text: "Une excellence opérationnelle. La même exigence pour chaque projet, quelle que soit sa taille." },
+        { title: "Qualité Scientifique", text: "Conformité GCP ICH E6(R3), Bonnes Pratiques Cliniques. Et des exigences réglementaires ANSM, EMA, FDA selon les juridictions." },
+        { title: "Flexibilité et Réactivité", text: "Capacité d'adaptation aux pivots stratégiques. Mobilisation des profils d'experts correspondants à vos besoins." }
+      ],
+      ctaTitle: "Vous préparez une étude clinique ?",
+      ctaButton: "Discutez de votre projet",
+      meetFounder: "Rencontrer notre Fondatrice",
+      memberOf: "Membre de l'"
+    },
+    founder: {
+      title: "Nadège KAMBOU — Fondatrice et Directrice des Opérations",
+      metaTitle: "Nadège KAMBOU — Fondatrice, Freearcs Pharma Services",
+      metaDescription: "Nadège KAMBOU, fondatrice et directrice de Freearcs Pharma Services — 10 ans d'expérience dans la recherche clinique internationale.",
+      intro: "Fondée par Nadège KAMBOU, Freearcs Pharma Services s'appuie sur plus de 10 ans d'expérience en recherche clinique internationale, acquise au sein de grandes CROs internationales.",
+      text1: "Elle a contribué à des études majeures en oncologie, Alzheimer, pédiatrie et autres domaines complexes.",
+      text2: "Face à l'émergence de biotechs et de startups HealthTech innovantes, Freearcs Pharma Services a été créée avec un modèle plus humain, basé sur la proximité, la compréhension des besoins clients et la transmission des bonnes pratiques.",
+      linkedin: "Voir le profil LinkedIn",
+      yearsLabel: "Années en Recherche Clinique",
+      experienceLabel: "Expérience CRO Internationale",
+      expertiseLabel: "Expertise Multi-Thérapeutique",
+      therapeuticAreasTitle: "Expérience Thérapeutique Clé",
+      therapeuticAreas: ["Oncologie", "Alzheimer", "Pédiatrie", "SNC", "Maladies Rares"],
+      bioTitle: "Parcours & Expertise",
+      quote: "Allier expertise réglementaire et proximité humaine — c'est la conviction qui a guidé la création de Freearcs Pharma Services."
+    },
+    services: {
+      title: "Services CRO — De la soumission réglementaire au monitoring de site",
+      metaTitle: "Services CRO — Gestion et suivi d'essais cliniques",
+      metaDescription: "Gestion de projet, monitoring, affaires réglementaires, budget et soutien aux investigateurs : découvrez notre offre de services CRO adaptée à chaque promoteur.",
+      intro: "Freearcs Pharma Services fournit un accompagnement complet à toutes les étapes des études cliniques pour les médicaments, dispositifs médicaux et produits non-santé — du développement précoce Phase I aux études post-commercialisation.",
+      heroSubtitle: "Accompagnement complet des études cliniques, de la soumission réglementaire au monitoring de site — Phase I à IV.",
+      projectManagement: {
+        title: "Gestion de Projet",
+        items: ["Support au design d'étude", "Coordination de projet", "Gestion budget, planning et KPI", "Coordination transversale"]
+      },
+      regulatoryAffairs: {
+        title: "Affaires Réglementaires",
+        items: ["Expertise EU CTR 536/2014, MDR 745 et Directive 2010/63/EU", "Soumissions via CTIS et autorités françaises (ANSM, CPP, ANSES, CNIL)", "Déclaration de sécurité et suivi réglementaire"]
+      },
+      contractBudget: {
+        title: "Contrat et Budget",
+        items: ["Gestion des Clinical Trial Agreements", "Négociation des accords sites investigateurs", "Optimisation des délais de démarrage"]
+      },
+      feasibilityMonitoring: {
+        title: "Faisabilité et Monitoring",
+        items: ["Qualification stratégique des sites", "Monitoring continu", "Intégrité des données et conformité protocole"]
+      },
+      siteSupport: {
+        title: "Support Site et Saisie Données",
+        items: ["Support au recrutement patient", "Saisie de données et support opérationnel"]
+      },
+      investigatorCompliance: {
+        title: "Conformité Investigateur",
+        items: ["Suivi continu de la conformité", "Respect des délais"]
+      },
+      training: {
+        title: "Formation",
+        items: ["Formation avec transfert de connaissances", "Mise en œuvre des bonnes pratiques (GCP/BPC)"]
+      },
+      talkToUs: "Parlons de votre étude clinique.",
+      allServicesTitle: "Tous les services",
+      allServicesSubtitle: "Accompagnement CRO complet adapté aux besoins de votre étude clinique",
+      ansmApplicableTitle: "Applicable à :",
+      ansmApplicableItems: [
+        "Études Phase I et I/II mononationales",
+        "Maladies graves ou rares",
+        "Mécanismes first-in-class",
+        "Études avec inclusion adolescente"
+      ],
+      ansmReducedTimeline: "Réduit le délai d'autorisation de 106 jours à 49 jours — ou 14 jours sans questions"
+    },
+    legalRepresentation: {
+      title: "Représentant Légal dans l'UE pour les Promoteurs Non-UE",
+      metaTitle: "Représentant légal UE — Essais cliniques",
+      metaDescription: "Freearcs Pharma Services assure la représentation légale européenne pour les promoteurs non-UE, conformément au règlement (UE) n°536/2014 et au MDR 745.",
+      heroSubtitle: "Représentation légale européenne pour les promoteurs non-UE, en conformité avec le règlement (UE) n°536/2014 et le MDR 745.",
+      intro: "Freearcs Pharma Services agit en tant que Représentant Légal pour les promoteurs établis en dehors de l'Union européenne, assumant la responsabilité d'assurer que les études cliniques sont conduites en pleine conformité avec les exigences réglementaires et éthiques européennes applicables, ainsi qu'avec les obligations fixées par les autorités de santé compétentes.",
+      targetTitle: "Promoteurs ciblés",
+      targetText: "Ce service est conçu pour les sociétés biotechs, laboratoires pharmaceutiques et institutions académiques établis aux États-Unis, en Asie, en Afrique ou dans d'autres territoires hors UE souhaitant initier ou maintenir des études cliniques en France ou dans l'Union européenne.",
+      requestAssessment: "Demander une évaluation Représentant Légal",
+      talkToUs: "Parlons de la Représentation Légale",
+      euLegalServicesLabel: "Services Juridiques UE",
+      typesOfOrgsTitle: "Types d'organisations",
+      typesOfOrgs: ["Sociétés biotechs", "Laboratoires pharmaceutiques", "Institutions académiques", "Fondations de recherche"],
+      benefits: [
+        "Conformité réglementaire complète — EU CTR 536/2014",
+        "Liaison avec l'ANSM, le CPP et le CTIS",
+        "Déclaration de sécurité et suivi réglementaire",
+        "Interlocuteur unique auprès des autorités européennes",
+        "Expertise réglementaire française et européenne",
+        "Suivi continu de la conformité"
+      ],
+      whatWeProvideTitle: "Ce que nous fournissons",
+      regulatoryFrameworkTitle: "Cadre Réglementaire",
+      targetRegions: [
+        { name: "États-Unis", flag: "🇺🇸" },
+        { name: "Asie", flag: "🌏" },
+        { name: "Afrique", flag: "🌍" },
+        { name: "Autres territoires non-UE", flag: "🌐" }
+      ]
+    },
+    therapeuticExpertise: {
+      title: "Expertise Thérapeutique — Oncologie, SNC, Maladies Rares et Au-delà",
+      metaTitle: "Expertise thérapeutique — Oncologie, SNC, Maladies rares",
+      metaDescription: "Oncologie, maladies rares, SNC, cardiologie, dermatologie : notre expertise couvre les domaines thérapeutiques les plus complexes de la recherche clinique.",
+      oncology: {
+        title: "Oncologie",
+        items: ["Tumeurs solides", "Lymphomes", "Myélome multiple", "Leucémies (LLC, LAM)", "Cancer de la vessie", "GIST", "Implants mammaires", "Radiothérapie"]
+      },
+      cns: {
+        title: "SNC et Maladies Rares",
+        items: ["Maladie d'Alzheimer", "Maladie de Parkinson", "Sclérose latérale amyotrophique", "Troubles neurodéveloppementaux", "Spasticité", "Dystrophie musculaire de Duchenne", "Maladie de Wilson", "FAOD", "Atrophie multisystématisée"]
+      },
+      other: {
+        title: "Autres Domaines",
+        items: ["Dermatologie", "Maladies infectieuses et vaccins", "Pneumologie (BPCO)", "Rhumatologie", "Cardiologie"]
+      },
+      discuss: "Discutez de votre aire thérapeutique",
+      introText: "Expertise thérapeutique complète dans les domaines de haute complexité, avec une expérience approfondie en oncologie, troubles du SNC, maladies rares et au-delà.",
+      priorityArea: "Domaine prioritaire",
+      statsProjects: "Projets cliniques",
+      statsAreas: "Aires thérapeutiques",
+      statsPhases: "Toutes les phases",
+      statsRegulatory: "Expertise réglementaire"
+    },
+    whyChooseUs: {
+      title: "Pourquoi Choisir Freearcs Pharma Services comme Partenaire CRO",
+      metaTitle: "Pourquoi choisir Freearcs Pharma Services",
+      metaDescription: "CRO agile, indépendante et experte : proximité avec le client, maîtrise de la réglementation française et flexibilité opérationnelle au service de vos études cliniques.",
+      intro: "Freearcs Pharma Services propose un modèle CRO flexible et piloté par l'expertise :",
+      items: [
+        { title: "Agilité", text: "Pas de méthodologie imposée, adaptation complète aux workflows clients" },
+        { title: "Excellence opérationnelle", text: "QMS rigoureux aligné sur ICH E6(R3) et les standards AFCROs" },
+        { title: "Accompagnement sur mesure", text: "Chaque engagement construit autour des contraintes et objectifs spécifiques du client" },
+        { title: "Collaboration forte", text: "Accès direct aux décideurs, réponse rapide, organisation à taille humaine" },
+        { title: "Profondeur réglementaire française", text: "Expertise ANSM, CPP, CTIS, ANSES — incluant la procédure fast-track ANSM (mars 2026) — un avantage compétitif pour les promoteurs non-UE et CROs partenaires internationaux" },
+        { title: "Modèle CRO-Partenaire", text: "Travail avec les CROs internationales en tant qu'experts locaux français de confiance" },
+        { title: "Capacité de supervision côté sponsor", text: "Accompagnement des promoteurs dans la supervision de CROs externes" }
+      ],
+      discuss: "Discutons de votre projet",
+      qualityTitle: "Qualité & Standards de conformité",
+      qualityItems: [
+        "Membre AFCROs — standards de l'association française des CROs",
+        "Système de management de la qualité conforme ICH E6(R3)",
+        "Expertise EU CTR 536/2014",
+        "Conformité MDR 745/2017",
+        "Mise en œuvre des bonnes pratiques GCP/BPC"
+      ],
+      advantagesTitle: "Avantages compétitifs",
+      advantageItems: [
+        "Expertise de la procédure fast-track ANSM (mars 2026)",
+        "Accès direct au CTIS et aux autorités françaises",
+        "Partenaire local de confiance pour les CROs internationales",
+        "Réponse rapide, organisation à taille humaine"
+      ],
+      comparisonTitle: "CRO indépendante vs grande CRO",
+      fpsBenefits: [
+        "Méthodologie flexible, adaptée",
+        "Accès direct aux experts seniors",
+        "Prise de décision rapide",
+        "Modèle d'engagement sur mesure",
+        "Solutions économiquement optimisées"
+      ],
+      largeCroLabel: "Grande CRO",
+      largeCroLimits: [
+        "Processus standardisés et rigides",
+        "Multiples niveaux hiérarchiques",
+        "Délais de réponse plus longs",
+        "Approche uniforme",
+        "Coûts de structure élevés"
+      ]
+    },
+    references: {
+      title: "Références — Études cliniques supervisées par Freearcs Pharma Services",
+      metaTitle: "Références — Projets cliniques supervisés",
+      metaDescription: "Plus de 30 projets cliniques supervisés, taux de fidélisation de 65 %. Découvrez nos collaborations avec des biotechs, des laboratoires et des CRO partenaires.",
+      intro: "Présentation des collaborations et logos clients.",
+      stats: {
+        projects: "Plus de 30 projets cliniques supervisés",
+        success: "25 projets menés à bien",
+        retention: "Taux de fidélisation client de 65 %"
+      },
+      trustedPartnersTitle: "Partenaires de confiance",
+      trustedPartnersSubtitle: "Collaborations avec les principales entreprises pharmaceutiques, biotechs et CROs",
+      studyTypesTitle: "Types d'études accompagnées",
+      studyTypes: [
+        "Études interventionnelles",
+        "Études observationnelles",
+        "Études épidémiologiques",
+        "Real-World Evidence (RWE)",
+        "Essais cliniques Phase I–IV",
+        "Études sur dispositifs médicaux",
+        "Études pédiatriques",
+        "Études maladies rares"
+      ],
+      afcrosMemberTitle: "Membre de AFCROs",
+      afcrosMemberSubtitle: "Association Française des CROs — standards de la profession",
+      clientDescriptions: [
+        "Partenaire en Recherche Clinique",
+        "Solutions en Santé",
+        "Conseil Clinique",
+        "Services Pharmaceutiques"
+      ]
+    },
+    blog: {
+      title: "Blog — Actualités recherche clinique par Freearcs Pharma Services",
+      metaTitle: "Blog — Actualités de la recherche clinique en France",
+      metaDescription: "Veille réglementaire, tendances CRO, procédure accélérée de l'ANSM, essais décentralisés : retrouvez nos analyses et publications sur la recherche clinique.",
+      readMore: "Lire la suite",
+      articles: [
+        {
+          slug: "fast-track-ansm-2026",
+          title: "Le fast-track ANSM — ce que les promoteurs doivent savoir en 2026",
+          excerpt: "Découvrez la nouvelle procédure fast-track de l'ANSM opérationnelle depuis mars 2026 et comment elle peut accélérer vos essais cliniques.",
+          date: "15 Mars 2026",
+          category: "Réglementaire"
+        },
+        {
+          slug: "cro-independante-vs-grande-cro",
+          title: "CRO indépendante vs grande CRO : quel modèle pour une biotech en phase précoce ?",
+          excerpt: "Analyse comparative des avantages et inconvénients de chaque modèle pour les biotechs en développement précoce.",
+          date: "10 Mars 2026",
+          category: "Stratégie"
+        },
+        {
+          slug: "ctis-guide-promoteurs-non-eu",
+          title: "CTIS — guide pratique pour les promoteurs non-européens",
+          excerpt: "Guide complet pour naviguer le Clinical Trials Information System en tant que promoteur établi hors de l'Union européenne.",
+          date: "5 Mars 2026",
+          category: "Réglementaire"
+        }
+      ],
+      introText: "Veille réglementaire, analyses CRO, innovations en essais cliniques et actualités du secteur par Freearcs Pharma Services.",
+      stayUpdatedTitle: "Restez informé",
+      stayUpdatedText: "Suivez-nous sur LinkedIn pour les dernières actualités en recherche clinique et mises à jour réglementaires.",
+      linkedinFollow: "Suivre sur LinkedIn",
+      topicsTitle: "Thèmes",
+      topics: ["Réglementaire", "Stratégie", "ANSM", "CTIS", "RWE", "Essais décentralisés", "Opérations cliniques"]
+    },
+    contact: {
+      title: "Contact Freearcs Pharma Services — Discutez de votre étude clinique",
+      metaTitle: "Contact — Freearcs Pharma Services",
+      metaDescription: "Discutez de votre projet clinique avec notre équipe. Études interventionnelles, observationnelles, RWE — nous vous accompagnons à chaque étape.",
+      intro: "Contactez-nous pour discuter de votre projet clinique et découvrir comment Freearcs Pharma Services peut accompagner votre étude.",
+      form: {
+        name: "Nom",
+        company: "Entreprise",
+        email: "Email",
+        phone: "Téléphone",
+        subject: "Sujet",
+        subjects: {
+          general: "Demande générale",
+          legalRep: "Représentation Légale",
+          project: "Discussion projet",
+          partnership: "Partenariat",
+          other: "Autre"
+        },
+        namePlaceholder: "Jean Dupont",
+        companyPlaceholder: "Nom de votre entreprise",
+        emailPlaceholder: "jean.dupont@entreprise.com",
+        phonePlaceholder: "+33 6 00 00 00 00",
+        messagePlaceholder: "Décrivez votre projet clinique, vos besoins ou votre question...",
+        message: "Message",
+        fileUpload: "Télécharger un fichier",
+        submit: "Envoyer le message",
+        selectSubjectPlaceholder: "Sélectionnez un sujet",
+        uploadPlaceholder: "Cliquez pour télécharger ou glissez-déposez",
+        uploadHint: "PDF, DOC, DOCX jusqu'à 10 Mo",
+        anotherMessage: "Envoyer un autre message"
+      },
+      successTitle: "Message envoyé !",
+      successText: "Merci de contacter Freearcs Pharma Services. Nous vous répondrons sous 24 à 48 heures.",
+      contactInfoTitle: "Coordonnées",
+      officeHoursTitle: "Horaires d'ouverture",
+      officeHours: ["Lundi – Vendredi : 9 h 00 – 18 h 00", "Samedi – Dimanche : Fermé"],
+      responseTime: "Nous répondons généralement sous 24 à 48 heures.",
+      afcrosMemberTitle: "Membre de AFCROs",
+      afcrosMemberSubtitle: "Association Française des CROs"
+    },
+    footer: {
+      tagline: "A Passion for Better Health",
+      quickLinks: "Liens Rapides",
+      legal: "Mentions Légales",
+      privacy: "Politique de Confidentialité",
+      cookies: "Cookies",
+      copyright: "© 2026 Freearcs Pharma Services. Tous droits réservés.",
+      location: "Paris, France",
+      servicesTitle: "Services",
+      serviceProjectManagement: "Project Management",
+      serviceRegulatoryAffairs: "Regulatory Affairs",
+      serviceFeasibilityMonitoring: "Feasibility & Monitoring",
+serviceLegalRepresentation: "Legal Representation EU"
+    },
+    404: {
+      title: "Page non trouvée",
+      description: "La page que vous cherchez n'existe pas ou a été déplacée.",
+      backHome: "Retour à l'accueil"
+    }
+  },
+  en: {
+    nav: {
+      about: "About",
+      visionMission: "About Us",
+      founder: "Our Founder",
+      whyChooseUs: "Why Choose Us?",
+      services: "Services",
+      allServices: "All our services",
+      legalRepresentation: "Legal Representation in the EU",
+      therapeuticExpertise: "Therapeutic Expertise",
+      references: "References",
+      blog: "Blog",
+      contact: "Contact",
+      contactUs: "Contact Us"
+    },
+    home: {
+      heroTitle: "CRO France - Expert Support for Clinical Studies from Phase I to Post-Market",
+      heroTitleLine1: "CRO France -",
+      heroTitleLine2: "Expert Support",
+      heroTitleLine3: " for Clinical Studies from Phase I to Post-Market",
+      heroSubtitle: "Freearcs Pharma Services is a French contract research organization (CRO) supporting pharmaceutical companies, biotechs, medtech, and academic sponsors in the conduct of clinical studies — from regulatory submissions to site monitoring and data management. Combining regulatory expertise, operational execution, and flexibility.",
+      ctaDiscuss: "Discuss Your Project",
+      ctaExplore: "Explore Our Services",
+      memberOf: "Member of ",
+      whoWeAre: "Who We Are",
+      whoWeAreText: "Freearcs Pharma Services is an independent French CRO supporting partners in the conduct of clinical studies across all phases. The company combines operational agility with high-level expertise and works closely with sponsors, investigators, and research teams. Founded by Nadège KAMBOU, with over 10 years of international clinical research experience at leading CROs and pharmaceutical companies.",
+      meetFounder: "Meet our Founder",
+      whatWeDo: "What We Do",
+      whatWeDoText: "Freearcs Pharma Services supports clinical studies from preparation to execution, ensuring regulatory compliance, operational efficiency, and high-quality delivery — from Phase I early development to Phase IV post-marketing studies.",
+      operationalModel: "Operational Model",
+      embeddedExecution: "Embedded execution model: direct integration within sponsor teams as operational lead",
+      sponsorOversight: "Sponsor-side oversight: supporting sponsors in supervising external CROs — contract review, KPI monitoring, site compliance, regulatory reporting",
+      flexibleMonitoring: "Flexible monitoring: risk-based and remote monitoring adapted to study design and site profile",
+      independentStructure: "Independent and adaptive structure: no standardised framework imposed — each engagement is built around the client's constraints and objectives",
+      coreServices: "Core Services",
+      projectManagement: "Project Management",
+      projectManagementDesc: "Study design support — Project coordination — Budget, planning and KPI management — Cross-functional coordination",
+      regulatoryAffairs: "Regulatory Affairs",
+      regulatoryAffairsDesc: "Expertise in EU CTR 536/2014, MDR 745 and Directive 2010/63/EU — Submissions via CTIS and to French authorities (ANSM, CPP, ANSES, CNIL) — Safety reporting and regulatory follow-up",
+      contractBudget: "Contract and Budget",
+      contractBudgetDesc: "Clinical Trial Agreement management — Investigator Site Agreement negotiation — Start-up timeline optimisation",
+      feasibilityMonitoring: "Feasibility and Monitoring",
+      feasibilityMonitoringDesc: "Strategic site qualification — Ongoing monitoring — Data integrity and protocol compliance",
+      siteSupport: "Site Support and Data Entry",
+      siteSupportDesc: "Patient recruitment support — Data entry and operational support",
+      investigatorCompliance: "Investigator Compliance",
+      investigatorComplianceDesc: "Continuous compliance monitoring — Timeline adherence",
+      training: "Training",
+      trainingDesc: "Training with knowledge transfer — Implementation of best practices (GCP/BPC)",
+      learnMore: "Learn More",
+      viewAllServices: "View all services",
+      therapeuticExpertise: "Therapeutic Expertise",
+      oncology: "Oncology",
+      cnsRareDiseases: "CNS & Rare Diseases",
+      cardiology: "Cardiology",
+      dermatology: "Dermatology",
+      infectiousDiseases: "Infectious Diseases",
+      pulmonology: "Pulmonology",
+      otherAreas: "Other Areas",
+      exploreExpertise: "Explore our therapeutic expertise",
+      whyChooseUs: "Why Choose Us",
+      whyChooseUsItems: [
+        "Agile and flexible CRO model",
+        "Strong operational execution",
+        "Close collaboration with clients",
+        "Ability to manage complex and innovative studies",
+        "French regulatory expertise: ANSM, CPP, CTIS - including the ANSM fast-track procedure operational since March 2026",
+        "Independent from large-CRO rigidity"
+      ],
+      whyChooseUsLink: "Why choose us",
+      references: "References",
+      referencesText: "Over 30 supervised clinical projects, 65% client retention rate. Discover our collaborations with biotechs, laboratories, and partner CROs.",
+      scheduleTitle: "Schedule a strategic discussion",
+      scheduleSubtitle: "tailored to your clinical project",
+      scheduleStrategic: "Schedule a strategic discussion",
+      scheduleTailored: "tailored to your clinical project",
+      bookMeeting: "Book a meeting",
+      ansm: {
+        title: "ANSM Fast-Track Procedure — France",
+        subtitle: "operational from 16 March 2026",
+        text: "Freearcs Pharma Services supports sponsors in preparing and submitting eligibility requests under the national fast-track scheme, reducing authorisation timelines from 106 days to 49 days — or 14 days when no questions are raised.",
+        procedures: "Freearcs Pharma Services supports: preparation and submission of eligibility requests under the national fast-track scheme. Phase I and I/II mononational studies targeting serious or rare diseases, first-in-class mechanisms, and adolescent inclusion."
+      },
+      talkToUs: "Talk to us about your clinical study."
+    },
+    about: {
+      title: "Freearcs Pharma Services - Independent French CRO",
+      metaTitle: "About - Independent Clinical CRO",
+      metaDescription: "Founded by Nadège KAMBOU, Freearcs Pharma Services supports biotech, pharmaceutical and academic organisations in their clinical studies with rigour and proximity.",
+      intro: "Freearcs Pharma Services is an independent French contract research organization (CRO) supporting partners in the conduct of clinical studies across a wide range of therapeutic areas and study types.",
+      introText2: "The company operates with a flexible and structured model, ensuring high-quality execution and regulatory compliance. As a member of AFCROs, Freearcs Pharma Services delivers rigorous, traceable, and client-centred clinical research support.",
+      visionTitle: "Vision",
+      visionText: "To become the preferred partner for clinical research in Europe and Francophone Africa. Recognized for its expertise, scientific rigor and capacity for innovation, Freearcs Pharma Services contributes to transforming scientific advances into concrete therapeutic solutions for patient well-being.",
+      missionTitle: "Mission",
+      missionText: "Because we believe that every disease can be effectively managed, we combine our expertise with that of our clients to offer solutions tailored to patients, whether mechanical, chemical or natural.",
+      signature: "A Passion for Better Health",
+      valuesTitle: "Values",
+      values: [
+        "Humanity and confidentiality",
+        "Rigor and expertise",
+        "Scientific quality",
+        "Flexibility and deadline respect"
+      ],
+      meetFounder: "Meet our Founder",
+      memberOf: "Member of "
+    },
+    founder: {
+      title: "Nadège KAMBOU - Founder and Director of Operations",
+      metaTitle: "Nadège KAMBOU - Founder, Freearcs Pharma Services",
+      metaDescription: "Nadège KAMBOU, founder and director of Freearcs Pharma Services — 10 years of experience in international clinical research.",
+      intro: "Founded by Nadège KAMBOU, Freearcs Pharma Services builds on over 10 years of international clinical research experience, gained at leading international CROs.",
+      text1: "She has contributed to major studies in oncology, Alzheimer's, pediatrics and other complex areas.",
+      text2: "Facing the emergence of innovative biotechs and HealthTech startups, Freearcs Pharma Services was created with a more human model, based on proximity, understanding client needs and transmitting best practices.",
+      linkedin: "View LinkedIn Profile",
+      yearsLabel: "Years in Clinical Research",
+      experienceLabel: "International CRO Experience",
+      expertiseLabel: "Multi-Therapeutic Area Expertise",
+      therapeuticAreasTitle: "Key Therapeutic Experience",
+      therapeuticAreas: ["Oncology", "Alzheimer's", "Pediatrics", "CNS", "Rare Diseases"],
+      bioTitle: "Background & Expertise",
+      quote: "Combining regulatory expertise with a human approach — that is the conviction that guided the creation of Freearcs Pharma Services."
+    },
+    services: {
+      title: "CRO Services - From Regulatory Submission to Site Monitoring",
+      metaTitle: "CRO Services - Clinical Trial Management and Monitoring",
+      metaDescription: "Project management, monitoring, regulatory affairs, budget and investigator support: discover our CRO services tailored to every sponsor.",
+      intro: "Freearcs Pharma Services provides comprehensive support across all stages of clinical studies for drugs, medical devices, and non-health products — from Phase I early development to post-marketing studies.",
+      heroSubtitle: "Comprehensive clinical study support, from regulatory submission to site monitoring — Phase I to IV.",
+      projectManagement: {
+        title: "Project Management",
+        items: ["Study design support", "Project coordination", "Budget, planning and KPI management", "Cross-functional coordination"]
+      },
+      regulatoryAffairs: {
+        title: "Regulatory Affairs",
+        items: ["Expertise in EU CTR 536/2014, MDR 745 and Directive 2010/63/EU", "Submissions via CTIS and to French authorities (ANSM, CPP, ANSES, CNIL)", "Safety reporting and regulatory follow-up"]
+      },
+      contractBudget: {
+        title: "Contract and Budget",
+        items: ["Clinical Trial Agreement management", "Investigator Site Agreement negotiation", "Start-up timeline optimisation"]
+      },
+      feasibilityMonitoring: {
+        title: "Feasibility and Monitoring",
+        items: ["Strategic site qualification", "Ongoing monitoring", "Data integrity and protocol compliance"]
+      },
+      siteSupport: {
+        title: "Site Support and Data Entry",
+        items: ["Patient recruitment support", "Data entry and operational support"]
+      },
+      investigatorCompliance: {
+        title: "Investigator Compliance",
+        items: ["Continuous compliance monitoring", "Timeline adherence"]
+      },
+      training: {
+        title: "Training",
+        items: ["Training with knowledge transfer", "Implementation of best practices (GCP/BPC)"]
+      },
+      talkToUs: "Talk to us about your clinical study.",
+      allServicesTitle: "All Services",
+      allServicesSubtitle: "Comprehensive CRO services tailored to your clinical study needs",
+      ansmApplicableTitle: "Applicable to:",
+      ansmApplicableItems: [
+        "Phase I and I/II mononational studies",
+        "Serious or rare diseases",
+        "First-in-class mechanisms",
+        "Adolescent inclusion studies"
+      ],
+      ansmReducedTimeline: "Reduces authorisation timeline from 106 days to 49 days — or 14 days when no questions raised"
+    },
+    legalRepresentation: {
+      title: "Legal Representative in the EU for Non-EU Sponsors",
+      metaTitle: "EU Legal Representative - Clinical Trials",
+      metaDescription: "Freearcs Pharma Services provides EU legal representation for non-EU sponsors, in compliance with Regulation (EU) No 536/2014 and MDR 745.",
+      heroSubtitle: "EU legal representation for non-EU sponsors, in compliance with Regulation (EU) No 536/2014 and MDR 745.",
+      intro: "Freearcs Pharma Services acts as Legal Representative for sponsors established outside the European Union, assuming responsibility for ensuring that clinical studies are conducted in full compliance with applicable European regulatory and ethical requirements, as well as with the obligations set forth by competent Health Authorities.",
+      targetTitle: "Target sponsors",
+      targetText: "This service is designed for biotech companies, pharmaceutical laboratories, and academic institutions established in the United States, Asia, Africa, or other non-EU territories seeking to initiate or maintain clinical studies in France or in the European Union.",
+      requestAssessment: "Request a Legal Representative Assessment",
+      talkToUs: "Talk to us about Legal Representation",
+      euLegalServicesLabel: "EU Legal Services",
+      typesOfOrgsTitle: "Types of organisations",
+      typesOfOrgs: ["Biotech companies", "Pharmaceutical laboratories", "Academic institutions", "Research foundations"],
+      benefits: [
+        "Full regulatory compliance - EU CTR 536/2014",
+        "Liaison with ANSM, CPP, and CTIS",
+        "Safety reporting and regulatory follow-up",
+        "Single point of contact for EU authorities",
+        "French and European regulatory expertise",
+        "Ongoing compliance monitoring"
+      ],
+      whatWeProvideTitle: "What we provide",
+      regulatoryFrameworkTitle: "Regulatory Framework",
+      targetRegions: [
+        { name: "United States", flag: "🇺🇸" },
+        { name: "Asia", flag: "🌏" },
+        { name: "Africa", flag: "🌍" },
+        { name: "Other non-EU territories", flag: "🌐" }
+      ]
+    },
+    therapeuticExpertise: {
+      title: "Therapeutic Expertise - Oncology, CNS, Rare Diseases and Beyond",
+      metaTitle: "Therapeutic Expertise - Oncology, CNS, Rare Diseases",
+      metaDescription: "Oncology, rare diseases, CNS, cardiology, dermatology: our expertise spans the most complex therapeutic areas in clinical research.",
+      oncology: {
+        title: "Oncology",
+        items: ["Solid tumours", "Lymphomas", "Multiple myeloma", "Leukaemias (CLL, AML)", "Bladder cancer", "GIST", "Breast implants", "Radiotherapy"]
+      },
+      cns: {
+        title: "CNS and Rare Diseases",
+        items: ["Alzheimer's disease", "Parkinson's disease", "Amyotrophic lateral sclerosis", "Neurodevelopmental disorders", "Spasticity", "Duchenne muscular dystrophy", "Wilson's disease", "FAOD", "Multiple system atrophy"]
+      },
+      other: {
+        title: "Other Areas",
+        items: ["Dermatology", "Infectious diseases and vaccines", "Pulmonology (COPD)", "Rheumatology", "Cardiology"]
+      },
+      discuss: "Discuss your therapeutic area",
+      introText: "Comprehensive therapeutic expertise across high-complexity areas, with deep experience in oncology, CNS disorders, rare diseases, and beyond.",
+      priorityArea: "Priority Area",
+      statsProjects: "Clinical Projects",
+      statsAreas: "Therapeutic Areas",
+      statsPhases: "All Study Phases",
+      statsRegulatory: "Regulatory Expertise"
+    },
+    whyChooseUs: {
+      title: "Why Choose Freearcs Pharma Services as Your CRO Partner",
+      metaTitle: "Why Choose Freearcs Pharma Services",
+      metaDescription: "Agile, independent and expert CRO: client proximity, mastery of French regulations and operational flexibility at the service of your clinical studies.",
+      intro: "Freearcs Pharma Services offers a flexible and expert-driven CRO model:",
+      items: [
+        { title: "Agility", text: "No imposed methodology, full adaptation to client workflows" },
+        { title: "Operational excellence", text: "Rigorous QMS aligned with ICH E6(R3) and AFCROs standards" },
+        { title: "Tailored support", text: "Each engagement built around the client's specific constraints and objectives" },
+        { title: "Strong collaboration", text: "Direct access to decision-makers, rapid response, human-scale organisation" },
+        { title: "French regulatory depth", text: "ANSM, CPP, CTIS, ANSES expertise — including ANSM fast-track procedure (March 2026) — a competitive advantage for non-EU sponsors and international CROs partners" },
+        { title: "Partner-CRO model", text: "Working with international CROs as trusted local French experts" },
+        { title: "Sponsor-side oversight capability", text: "Supporting sponsors in supervising external CROs" }
+      ],
+      discuss: "Let's discuss your project",
+      qualityTitle: "Quality & Compliance Standards",
+      qualityItems: [
+        "AFCROs member - French CRO association standards",
+        "ICH E6(R3) compliant Quality Management System",
+        "EU CTR 536/2014 expertise",
+        "MDR 745/2017 compliance",
+        "GCP/BPC best practices implementation"
+      ],
+      advantagesTitle: "Competitive Advantages",
+      advantageItems: [
+        "ANSM fast-track procedure expertise (March 2026)",
+        "Direct CTIS and French authority access",
+        "Trusted local partner for international CROs",
+        "Rapid response and human-scale organisation"
+      ],
+      comparisonTitle: "Independent CRO vs Large CRO",
+      fpsBenefits: [
+        "Flexible, adaptive methodology",
+        "Direct access to senior experts",
+        "Rapid decision-making",
+        "Tailored engagement model",
+        "Cost-effective solutions"
+      ],
+      largeCroLabel: "Large CRO",
+      largeCroLimits: [
+        "Standardized, rigid processes",
+        "Multiple layers of management",
+        "Slower response times",
+        "One-size-fits-all approach",
+        "Higher overhead costs"
+      ]
+    },
+    references: {
+      title: "References - Clinical Studies Supervised by Freearcs Pharma Services",
+      metaTitle: "References - Supervised Clinical Projects",
+      metaDescription: "Over 30 supervised clinical projects, 65% client retention rate. Discover our collaborations with biotechs, laboratories, and partner CROs.",
+      intro: "Presentation of collaborations and client logos.",
+      stats: {
+        projects: "Over 30 clinical projects supervised",
+        success: "25 projects successfully completed",
+        retention: "65% client retention rate"
+      },
+      trustedPartnersTitle: "Trusted Partners",
+      trustedPartnersSubtitle: "Working with leading pharmaceutical companies, biotechs, and CROs",
+      studyTypesTitle: "Types of Studies Supported",
+      studyTypes: [
+        "Interventional Studies",
+        "Observational Studies",
+        "Epidemiological Studies",
+        "Real-World Evidence (RWE)",
+        "Phase I–IV Clinical Trials",
+        "Medical Device Studies",
+        "Pediatric Studies",
+        "Rare Disease Studies"
+      ],
+      afcrosMemberTitle: "Member of AFCROs",
+      afcrosMemberSubtitle: "Association Française des CROs — professional standards",
+      clientDescriptions: [
+        "Clinical Research Partner",
+        "Healthcare Solutions",
+        "Clinical Consulting",
+        "Pharmaceutical Services"
+      ]
+    },
+    blog: {
+      title: "Blog - Clinical Research Insights by Freearcs Pharma Services",
+      metaTitle: "Blog - Clinical Research News in France",
+      metaDescription: "Regulatory updates, CRO trends, ANSM fast-track procedure, decentralised trials: find our analyses and publications on clinical research.",
+      readMore: "Read More",
+      articles: [
+        {
+          slug: "fast-track-ansm-2026",
+          title: "The ANSM fast-track - what sponsors need to know in 2026",
+          excerpt: "Discover the new ANSM fast-track procedure operational since March 2026 and how it can accelerate your clinical trials.",
+          date: "March 15, 2026",
+          category: "Regulatory"
+        },
+        {
+          slug: "independent-cro-vs-large-cro",
+          title: "Independent CRO vs large CRO: which model for an early-stage biotech?",
+          excerpt: "Comparative analysis of the advantages and disadvantages of each model for early-stage biotechs.",
+          date: "March 10, 2026",
+          category: "Strategy"
+        },
+        {
+          slug: "ctis-guide-non-eu-sponsors",
+          title: "CTIS — practical guide for non-European sponsors",
+          excerpt: "Complete guide to navigating the Clinical Trials Information System as a sponsor established outside the European Union.",
+          date: "March 5, 2026",
+          category: "Regulatory"
+        }
+      ],
+      introText: "Regulatory updates, CRO insights, clinical trial innovations, and industry analysis from Freearcs Pharma Services.",
+      stayUpdatedTitle: "Stay Updated",
+      stayUpdatedText: "Follow us on LinkedIn for the latest clinical research insights and regulatory updates.",
+      linkedinFollow: "Follow on LinkedIn",
+      topicsTitle: "Topics",
+      topics: ["Regulatory", "Strategy", "ANSM", "CTIS", "RWE", "Decentralized Trials", "Clinical Operations"]
+    },
+    contact: {
+      title: "Contact Freearcs Pharma Services — Discuss Your Clinical Study",
+      metaTitle: "Contact — Freearcs Pharma Services",
+      metaDescription: "Discuss your clinical project with our team. Interventional, observational, RWE studies — we support you at every stage.",
+      intro: "Contact us to discuss your clinical project and explore how Freearcs Pharma Services can support your study.",
+      form: {
+        name: "Name",
+        company: "Company",
+        email: "Email",
+        phone: "Phone",
+        subject: "Subject",
+        subjects: {
+          general: "General inquiry",
+          legalRep: "Legal Representation",
+          project: "Project discussion",
+          partnership: "Partnership",
+          other: "Other"
+        },
+        namePlaceholder: "John Smith",
+        companyPlaceholder: "Your company name",
+        emailPlaceholder: "john.smith@company.com",
+        phonePlaceholder: "+33 6 00 00 00 00",
+        messagePlaceholder: "Describe your clinical project, needs or question...",
+        message: "Message",
+        fileUpload: "Upload file",
+        submit: "Send Message",
+        selectSubjectPlaceholder: "Select a subject",
+        uploadPlaceholder: "Click to upload or drag and drop",
+        uploadHint: "PDF, DOC, DOCX up to 10MB",
+        anotherMessage: "Send Another Message"
+      },
+      successTitle: "Message Sent!",
+      successText: "Thank you for contacting Freearcs Pharma Services. We will get back to you within 24–48 hours.",
+      contactInfoTitle: "Contact Information",
+      officeHoursTitle: "Office Hours",
+      officeHours: ["Monday – Friday: 9:00 – 18:00", "Saturday – Sunday: Closed"],
+      responseTime: "We typically respond within 24–48 hours.",
+      afcrosMemberTitle: "Member of AFCROs",
+      afcrosMemberSubtitle: "Association Française des CROs"
+    },
+    footer: {
+      tagline: "A Passion for Better Health",
+      quickLinks: "Quick Links",
+      legal: "Legal Notice",
+      privacy: "Privacy Policy",
+      cookies: "Cookies",
+      copyright: "© 2026 Freearcs Pharma Services. All rights reserved.",
+      location: "Paris, France",
+      servicesTitle: "Services",
+      serviceProjectManagement: "Project Management",
+      serviceRegulatoryAffairs: "Regulatory Affairs",
+      serviceFeasibilityMonitoring: "Feasibility & Monitoring",
+      serviceLegalRepresentation: "Legal Representation EU"
+    },
+    404: {
+      title: "Page not found",
+      description: "The page you're looking for doesn't exist or has been moved.",
+      backHome: "Back to home"
+    }
+  }
+};

@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Avenir Next', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+  :root {
+    /* FREEARCS PHARMA SERVICES Color System */
+    --background: 60 6% 97%; /* #F8F8F6 */
+    --foreground: 220 14% 10%; /* Dark text */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 14% 10%;
+    
+    /* Primary: Green #2E9013 */
+    --primary: 106 81% 32%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Mauve #573D4E */
+    --secondary: 330 20% 29%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 60 6% 95%;
+    --muted-foreground: 220 9% 46%;
+    
+    /* Accent: Amber #F5A617 */
+    --accent: 40 92% 52%;
+    --accent-foreground: 220 14% 10%;
+    
+    /* Destructive: Red #D81C20 */
+    --destructive: 359 79% 48%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 106 81% 32%; /* Green for focus */
+    
+    --chart-1: 106 81% 32%; /* Green */
+    --chart-2: 330 20% 29%; /* Mauve */
+    --chart-3: 40 92% 52%; /* Amber */
+    --chart-4: 359 79% 48%; /* Red */
+    --chart-5: 106 81% 45%; /* Light Green */
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 14% 10%;
+    --foreground: 60 6% 97%;
+    
+    --card: 220 14% 14%;
+    --card-foreground: 60 6% 97%;
+    
+    --popover: 220 14% 14%;
+    --popover-foreground: 60 6% 97%;
+    
+    --primary: 106 81% 40%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 330 20% 35%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 220 14% 20%;
+    --muted-foreground: 220 9% 60%;
+    
+    --accent: 40 92% 52%;
+    --accent-foreground: 220 14% 10%;
+    
+    --destructive: 359 79% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 14% 20%;
+    --input: 220 14% 20%;
+    --ring: 106 81% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avenir Next', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .font-raleway {
+    font-family: 'Avenir Next', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .font-nunito {
+    font-family: 'Avenir Next', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+
+  [data-debug-wrapper="true"] > * {
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    gap: inherit;
+    border-left-width: inherit;
+    border-right-width: inherit;
+    border-top-width: inherit;
+    border-bottom-width: inherit;
+    border-left-style: inherit;
+    border-right-style: inherit;
+    border-top-style: inherit;
+    border-bottom-style: inherit;
+    border-left-color: inherit;
+    border-right-color: inherit;
+    border-top-color: inherit;
+    border-bottom-color: inherit;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.5s ease forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

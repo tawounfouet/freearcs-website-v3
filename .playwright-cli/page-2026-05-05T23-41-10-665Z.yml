@@ -1,0 +1,5 @@
+- generic [ref=e4]:
+  - heading "Oops! Une erreur s'est produite" [level=1] [ref=e5]
+  - paragraph [ref=e6]: SEO is not defined
+  - link "Retour à l'accueil" [ref=e7] [cursor=pointer]:
+    - /url: /

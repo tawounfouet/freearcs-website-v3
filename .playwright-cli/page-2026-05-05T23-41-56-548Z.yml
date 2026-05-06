@@ -1,0 +1,299 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "Freearcs Pharma Services" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Freearcs Pharma Services" [ref=e9]
+      - navigation [ref=e10]:
+        - link "Accueil" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - text: Accueil
+        - link "À propos" [ref=e15] [cursor=pointer]:
+          - /url: /about
+          - text: À propos
+          - img [ref=e16]
+        - link "Services" [ref=e19] [cursor=pointer]:
+          - /url: /services
+          - text: Services
+          - img [ref=e20]
+        - link "Expertise Thérapeutique" [ref=e23] [cursor=pointer]:
+          - /url: /therapeutic-expertise
+          - text: Expertise Thérapeutique
+        - link "Blog" [ref=e25] [cursor=pointer]:
+          - /url: /blog
+          - text: Blog
+        - link "Contact" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+          - text: Contact
+      - generic [ref=e28]:
+        - button "fr" [ref=e29] [cursor=pointer]:
+          - img [ref=e30]
+          - generic [ref=e33]: fr
+        - link "Nous Contacter" [ref=e34] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic:
+          - img
+        - generic:
+          - img
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - heading "CRO France - Accompagnement expert pour vos études cliniques de la Phase I à la post-commercialisation" [level=1] [ref=e41]:
+              - generic [ref=e42]:
+                - text: CRO France -
+                - generic [ref=e43]: Accompagnement expert
+              - text: pour vos études cliniques de la Phase I à la post-commercialisation
+            - paragraph [ref=e45]: Freearcs Pharma Services est une société de recherche clinique sous contrat (CRO) française accompagnant les laboratoires pharmaceutiques, biotechs, medtech et promoteurs académiques dans la conduite de leurs études cliniques — de la soumission réglementaire au monitoring de site et à la gestion des données. Alliant expertise réglementaire, exécution opérationnelle et flexibilité.
+            - generic [ref=e46]:
+              - link "Discutez de votre projet" [ref=e47] [cursor=pointer]:
+                - /url: /contact
+                - text: Discutez de votre projet
+                - img
+              - link "Découvrez nos services" [ref=e48] [cursor=pointer]:
+                - /url: /services
+                - text: Découvrez nos services
+                - img
+            - generic [ref=e49]:
+              - generic [ref=e50]: Membre de l'
+              - img "AFCROs" [ref=e52]
+          - img "Équipe Freearcs Pharma Services en réunion" [ref=e58]
+      - generic [ref=e61]:
+        - generic [ref=e63]:
+          - heading "Qui Sommes-Nous" [level=2] [ref=e64]
+          - paragraph [ref=e65]: Freearcs Pharma Services est une CRO française indépendante accompagnant ses partenaires dans la conduite d'études cliniques à toutes les phases. L'entreprise combine agilité opérationnelle et expertise de haut niveau, travaillant en étroite collaboration avec les promoteurs, investigateurs et équipes de recherche. Fondée par Nadège KAMBOU, forte de plus de 10 ans d'expérience internationale en recherche clinique au sein de grandes CROs et laboratoires pharmaceutiques.
+          - generic [ref=e66]:
+            - link "Nous Contacter" [ref=e67] [cursor=pointer]:
+              - /url: /contact
+            - link "Rencontrez notre fondatrice" [ref=e68] [cursor=pointer]:
+              - /url: /about/founder
+              - text: Rencontrez notre fondatrice
+              - img
+        - generic [ref=e70]:
+          - heading "Ce Que Nous Faisons" [level=2] [ref=e71]
+          - paragraph [ref=e72]: Freearcs Pharma Services accompagne les études cliniques de la préparation à l'exécution, assurant conformité réglementaire, efficacité opérationnelle et qualité de délivrance — du développement précoce Phase I aux études post-commercialisation Phase IV.
+          - img [ref=e73]
+      - img [ref=e76]
+      - generic [ref=e82]:
+        - heading "Modèle Opérationnel" [level=3] [ref=e83]
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]: ▸
+            - generic [ref=e87]: "Modèle d'exécution intégré : intégration directe au sein des équipes sponsor en tant que responsable opérationnel"
+          - generic [ref=e88]:
+            - generic [ref=e89]: ▸
+            - generic [ref=e90]: "Supervision côté sponsor : accompagnement des promoteurs dans la supervision de CROs externes — revue contractuelle, suivi KPI, conformité site, reporting réglementaire"
+          - generic [ref=e91]:
+            - generic [ref=e92]: ▸
+            - generic [ref=e93]: "Monitoring flexible : monitoring risk-based et à distance adapté au design de l'étude et au profil du site"
+          - generic [ref=e94]:
+            - generic [ref=e95]: ▸
+            - generic [ref=e96]: "Structure indépendante et adaptative : pas de cadre standardisé imposé — chaque engagement est construit autour des contraintes et objectifs du client"
+      - generic [ref=e98]:
+        - heading "Services Principaux" [level=2] [ref=e101]
+        - generic [ref=e102]:
+          - generic [ref=e106]:
+            - img [ref=e108]
+            - heading "Gestion de projet" [level=3] [ref=e111]
+            - paragraph [ref=e112]: Support au design d'étude — Coordination de projet — Gestion budget, planning et KPI — Coordination transversale
+            - link "En savoir plus" [ref=e113] [cursor=pointer]:
+              - /url: /services
+              - text: En savoir plus
+              - img [ref=e114]
+          - generic [ref=e119]:
+            - img [ref=e121]
+            - heading "Affaires Réglementaires" [level=3] [ref=e124]
+            - paragraph [ref=e125]: Expertise EU CTR 536/2014, MDR 745 et Directive 2010/63/EU — Soumissions via CTIS et autorités françaises (ANSM, CPP, ANSES, CNIL) — Déclaration de sécurité et suivi réglementaire
+            - link "En savoir plus" [ref=e126] [cursor=pointer]:
+              - /url: /services
+              - text: En savoir plus
+              - img [ref=e127]
+          - generic [ref=e132]:
+            - img [ref=e134]
+            - heading "Contrat et Budget" [level=3] [ref=e136]
+            - paragraph [ref=e137]: Gestion des Clinical Trial Agreements — Négociation des accords sites investigateurs — Optimisation des délais de démarrage
+            - link "En savoir plus" [ref=e138] [cursor=pointer]:
+              - /url: /services
+              - text: En savoir plus
+              - img [ref=e139]
+          - generic [ref=e144]:
+            - img [ref=e146]
+            - heading "Faisabilité et Monitoring" [level=3] [ref=e149]
+            - paragraph [ref=e150]: Qualification stratégique des sites — Monitoring continu — Intégrité des données et conformité protocole
+            - link "En savoir plus" [ref=e151] [cursor=pointer]:
+              - /url: /services
+              - text: En savoir plus
+              - img [ref=e152]
+          - generic [ref=e157]:
+            - img [ref=e159]
+            - heading "Support Site et Saisie Données" [level=3] [ref=e164]
+            - paragraph [ref=e165]: Support au recrutement patient — Saisie de données et support opérationnel
+            - link "En savoir plus" [ref=e166] [cursor=pointer]:
+              - /url: /services
+              - text: En savoir plus
+              - img [ref=e167]
+          - generic [ref=e172]:
+            - img [ref=e174]
+            - heading "Conformité Investigateur" [level=3] [ref=e177]
+            - paragraph [ref=e178]: Suivi continu de la conformité — Respect des délais
+            - link "En savoir plus" [ref=e179] [cursor=pointer]:
+              - /url: /services
+              - text: En savoir plus
+              - img [ref=e180]
+        - link "Voir tous les services" [ref=e184] [cursor=pointer]:
+          - /url: /services
+          - text: Voir tous les services
+          - img
+      - generic [ref=e187]:
+        - generic [ref=e189]:
+          - heading "Procédure Fast-Track ANSM —" [level=3] [ref=e190]
+          - paragraph [ref=e191]: opérationnelle depuis le 16 mars 2026
+          - paragraph [ref=e192]: Freearcs Pharma Services accompagne les promoteurs dans la préparation et la soumission des demandes d'éligibilité dans le cadre du dispositif national fast-track, réduisant les délais d'autorisation de 106 jours à 49 jours — ou 14 jours sans questions.
+          - link "En savoir plus" [ref=e193] [cursor=pointer]:
+            - /url: /services
+            - text: En savoir plus
+            - img [ref=e194]
+        - generic [ref=e197]:
+          - heading "Procedures:" [level=4] [ref=e198]
+          - paragraph [ref=e199]: "Freearcs Pharma Services accompagne : préparation et soumission des demandes d'éligibilité dans le cadre du dispositif national fast-track. Études Phase I et I/II mononationales ciblant les maladies graves ou rares, mécanismes first-in-class, et inclusion adolescente."
+          - link "En savoir plus" [ref=e201] [cursor=pointer]:
+            - /url: /services
+            - text: En savoir plus
+            - img [ref=e202]
+      - img [ref=e205]
+      - generic [ref=e209]:
+        - heading "Expertise Thérapeutique" [level=2] [ref=e212]
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - img [ref=e216]
+            - heading "Oncologie" [level=3] [ref=e218]
+          - generic [ref=e219]:
+            - img [ref=e221]
+            - heading "SNC & Maladies Rares" [level=3] [ref=e231]
+          - generic [ref=e232]:
+            - img [ref=e234]
+            - heading "Cardiologie" [level=3] [ref=e236]
+          - generic [ref=e237]:
+            - img [ref=e239]
+            - heading "Dermatologie" [level=3] [ref=e243]
+          - generic [ref=e244]:
+            - img [ref=e246]
+            - heading "Maladies Infectieuses" [level=3] [ref=e255]
+          - generic [ref=e256]:
+            - img [ref=e258]
+            - heading "Pneumologie" [level=3] [ref=e262]
+        - link "Découvrir notre expertise thérapeutique" [ref=e265] [cursor=pointer]:
+          - /url: /therapeutic-expertise
+          - text: Découvrir notre expertise thérapeutique
+          - img
+      - generic [ref=e267]:
+        - generic [ref=e269]:
+          - heading "Références" [level=2] [ref=e270]
+          - generic [ref=e271]:
+            - generic [ref=e272]: Membre de l'
+            - img "AFCROs" [ref=e273]
+        - generic [ref=e274]:
+          - generic [ref=e275]:
+            - paragraph [ref=e276]:
+              - generic [ref=e277]: 0+
+            - paragraph [ref=e278]: Plus de 30 projets cliniques supervisés
+          - generic [ref=e279]:
+            - paragraph [ref=e280]: "0"
+            - paragraph [ref=e281]: 25 projets menés à bien
+          - generic [ref=e282]:
+            - paragraph [ref=e283]:
+              - generic [ref=e284]: 0%
+            - paragraph [ref=e285]: Taux de fidélisation client de 65 %
+        - paragraph [ref=e287]: Plus de 30 projets cliniques supervisés, taux de fidélisation de 65 %. Découvrez nos collaborations avec des biotechs, des laboratoires et des CRO partenaires.
+      - generic [ref=e289]:
+        - generic [ref=e290]:
+          - paragraph [ref=e291]: Planifiez une discussion stratégique
+          - paragraph [ref=e292]: adaptée à votre projet clinique
+          - paragraph [ref=e293]: Parlons de votre étude clinique.
+        - link "Nous Contacter" [ref=e295] [cursor=pointer]:
+          - /url: /contact
+          - text: Nous Contacter
+          - img
+  - contentinfo [ref=e296]:
+    - generic [ref=e297]:
+      - generic [ref=e298]:
+        - generic [ref=e299]:
+          - link "Freearcs Pharma Services" [ref=e300] [cursor=pointer]:
+            - /url: /
+            - img "Freearcs Pharma Services" [ref=e301]
+          - paragraph [ref=e302]: A Passion for Better Health
+          - generic [ref=e303]:
+            - img [ref=e304]
+            - generic [ref=e307]: Paris, France
+          - generic [ref=e308]: Member ofAFCROs
+        - generic [ref=e309]:
+          - heading "Liens Rapides" [level=3] [ref=e310]
+          - navigation [ref=e311]:
+            - link "À propos" [ref=e312] [cursor=pointer]:
+              - /url: /about
+            - link "Services" [ref=e313] [cursor=pointer]:
+              - /url: /services
+            - link "Expertise Thérapeutique" [ref=e314] [cursor=pointer]:
+              - /url: /therapeutic-expertise
+            - link "Pourquoi nous choisir ?" [ref=e315] [cursor=pointer]:
+              - /url: /why-choose-us
+            - link "Références" [ref=e316] [cursor=pointer]:
+              - /url: /references
+            - link "Blog" [ref=e317] [cursor=pointer]:
+              - /url: /blog
+            - link "Contact" [ref=e318] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e319]:
+          - heading "Services" [level=3] [ref=e320]
+          - navigation [ref=e321]:
+            - link "Project Management" [ref=e322] [cursor=pointer]:
+              - /url: /services
+            - link "Regulatory Affairs" [ref=e323] [cursor=pointer]:
+              - /url: /services
+            - link "Feasibility & Monitoring" [ref=e324] [cursor=pointer]:
+              - /url: /services
+            - link "Legal Representation EU" [ref=e325] [cursor=pointer]:
+              - /url: /legal-representation
+        - generic [ref=e326]:
+          - heading "Contact" [level=3] [ref=e327]
+          - generic [ref=e328]:
+            - link "contact@freearcs-pharma.com" [ref=e329] [cursor=pointer]:
+              - /url: mailto:contact@freearcs-pharma.com
+              - img [ref=e330]
+              - generic [ref=e333]: contact@freearcs-pharma.com
+            - link "+33 1 00 00 00 00" [ref=e334] [cursor=pointer]:
+              - /url: tel:+33100000000
+              - img [ref=e335]
+              - generic [ref=e337]: +33 1 00 00 00 00
+          - generic [ref=e338]:
+            - link [ref=e339] [cursor=pointer]:
+              - /url: https://linkedin.com
+              - img [ref=e340]
+            - link [ref=e344] [cursor=pointer]:
+              - /url: https://twitter.com
+              - img [ref=e345]
+          - generic [ref=e347]:
+            - button "EN" [ref=e348] [cursor=pointer]
+            - button "FR" [ref=e349] [cursor=pointer]
+      - generic [ref=e350]:
+        - paragraph [ref=e351]: © 2026 Freearcs Pharma Services. Tous droits réservés.
+        - generic [ref=e352]:
+          - link "Mentions Légales" [ref=e353] [cursor=pointer]:
+            - /url: /legal
+          - link "Politique de Confidentialité" [ref=e354] [cursor=pointer]:
+            - /url: /privacy
+          - link "Cookies" [ref=e355] [cursor=pointer]:
+            - /url: /cookies
+  - dialog "Gestion des cookies" [ref=e357]:
+    - generic [ref=e358]:
+      - img [ref=e360]
+      - heading "Gestion des cookies" [level=2] [ref=e362]
+    - paragraph [ref=e363]: Freearcs Pharma Services utilise des cookies pour améliorer votre expérience, mesurer l'audience du site et, avec votre accord, diffuser des contenus adaptés. Certains cookies sont strictement nécessaires au fonctionnement du site.
+    - paragraph [ref=e364]: Conformément à la recommandation consolidée de la CNIL du 25 janvier 2024, le refus des cookies non essentiels n'affecte pas votre navigation.
+    - generic [ref=e365]:
+      - button "Tout accepter" [ref=e366] [cursor=pointer]
+      - button "Tout refuser" [ref=e367] [cursor=pointer]
+    - paragraph [ref=e368]:
+      - link "En savoir plus sur notre politique de cookies" [ref=e369] [cursor=pointer]:
+        - /url: /cookies
