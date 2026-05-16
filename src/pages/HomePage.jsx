@@ -2,6 +2,11 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView, animate } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
 import { GreenWave, GreenWaveDivider, HeroWaveTop, HeroWaveBottom } from '../components/GreenWave';
 import LogoCarousel from '../components/LogoCarousel';
 import SEO from '../components/SEO';
@@ -15,6 +20,8 @@ import {
   Users,
   GraduationCap,
   ArrowRight,
+  ChevronLeft,
+  ChevronRight,
   Beaker,
   Brain,
   Heart,
@@ -22,8 +29,6 @@ import {
   Bug,
   Wind
 } from 'lucide-react';
-
-const HERO_IMAGE = "/reunion-equipe_gemini.webp";
 
 // ─── Animation variants ───────────────────────────────────────────────────────
 
@@ -52,82 +57,6 @@ const staggerContainer = (stagger = 0.1, delayStart = 0) => ({
 const staggerItem = {
   hidden: { opacity: 0, y: 24 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease } },
-};
-
-const heroStagger = staggerContainer(0.12, 0.1);
-
-// ─── Rotating hero title ──────────────────────────────────────────────────────
-
-const HERO_TITLES = [
-  {
-    line1: "L\u2019expertise au service de",
-    accent: 'la recherche clinique',
-    line3: '',
-  },
-  {
-    line1: 'Élargissons le choix thérapeutique',
-    accent: 'pour chaque patient.',
-    line3: '',
-  },
-  {
-    line1: 'Un périmètre complet',
-    accent: 'pour vos études cliniques.',
-    line3: '',
-  },
-];
-
-const RotatingTitle = () => {
-  const [titleIndex, setTitleIndex] = useState(0);
-  const [displayCount, setDisplayCount] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  const current = HERO_TITLES[titleIndex];
-  // fullText = "line1 accent" — on sépare ensuite pour le style
-  const fullText = `${current.line1} ${current.accent}`;
-  const splitAt = current.line1.length + 1; // indice de début de la partie accent
-
-  useEffect(() => {
-    let timeout;
-    if (!isDeleting) {
-      if (displayCount < fullText.length) {
-        // Frappe caractère par caractère
-        timeout = setTimeout(() => setDisplayCount((c) => c + 1), 48);
-      } else {
-        // Pause avant effacement
-        timeout = setTimeout(() => setIsDeleting(true), 2400);
-      }
-    } else {
-      if (displayCount > 0) {
-        // Effacement plus rapide que la frappe
-        timeout = setTimeout(() => setDisplayCount((c) => c - 1), 22);
-      } else {
-        // Passe au titre suivant
-        setIsDeleting(false);
-        setTitleIndex((i) => (i + 1) % HERO_TITLES.length);
-      }
-    }
-    return () => clearTimeout(timeout);
-  }, [displayCount, isDeleting, fullText]);
-
-  // Partie normale vs partie en accent (italique vert)
-  const shownLine1   = fullText.slice(0, Math.min(displayCount, splitAt));
-  const shownAccent  = displayCount > splitAt ? fullText.slice(splitAt, displayCount) : '';
-
-  return (
-    <div className="mb-8 text-center">
-      <h1
-        className="font-raleway text-3xl sm:text-4xl lg:text-5xl font-bold text-[#573D4E] leading-tight inline"
-        data-testid="hero-title"
-      >
-        {shownLine1}
-        {shownAccent && (
-          <span className="italic font-normal text-[#2E9013]">{shownAccent}</span>
-        )}
-        {/* Curseur clignotant */}
-        <span className="inline-block w-[3px] h-[1em] bg-[#2E9013] ml-1 align-middle animate-[blink_0.9s_step-end_infinite]" />
-      </h1>
-    </div>
-  );
 };
 
 // ─── Animated counter ─────────────────────────────────────────────────────────
@@ -207,102 +136,138 @@ const HomePage = () => {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section
-        className="relative flex items-center justify-center overflow-hidden pt-32 pb-32 xl:pt-48 xl:pb-48 bg-white"
-        data-testid="hero-section"
-      >
-        <HeroWaveTop />
-        <HeroWaveBottom />
-
-        <div className="relative z-20 max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 w-full">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-
-            {/* Text column */}
-            <motion.div
-              className="lg:w-7/12 text-center flex flex-col items-center"
-              initial="hidden"
-              animate="visible"
-              variants={heroStagger}
-            >
-              <RotatingTitle />
-
-              <motion.div className="max-w-2xl mb-10 mx-auto" variants={staggerItem}>
-                <p className="text-[#4B5563] text-lg leading-relaxed">
-                  {t('home.heroSubtitle')}
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="flex flex-wrap justify-center gap-4 mb-12"
-                variants={staggerItem}
-              >
-                <Button
-                  asChild
-                  className="bg-[#2E9013] hover:bg-[#1f6b0d] text-white font-semibold px-8 py-4 rounded shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-                  data-testid="hero-cta-discuss"
-                >
-                  <Link to="/contact">
-                    {t('home.ctaDiscuss')}
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="bg-gray-50 border border-gray-200 text-[#2B2B2B] hover:bg-white hover:shadow-md font-semibold px-8 py-4 rounded transition-all duration-200"
-                  data-testid="hero-cta-explore"
-                >
-                  <Link to="/services">
-                    {t('home.ctaExplore')}
-                    <ArrowRight className="ml-2 w-4 h-4 opacity-50" />
-                  </Link>
-                </Button>
-              </motion.div>
-
-              <motion.div
-                className="flex items-center justify-center gap-4 opacity-70"
-                variants={staggerItem}
-              >
-                <span className="text-xs uppercase tracking-[0.2em] text-gray-400 font-bold">{t('home.memberOf')}</span>
-                <div className="h-8 w-px bg-gray-300" />
-                <img src={"/AFCROs.png"} alt="AFCROs" className="h-8 w-auto object-contain" />
-              </motion.div>
-            </motion.div>
-
-            {/* Image column */}
-            <motion.div
-              className="lg:w-5/12 relative"
-              initial="hidden"
-              animate="visible"
-              variants={fadeRight}
-            >
-              <div className="hero-float relative z-10">
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#2E9013]/10 rounded-full blur-3xl -z-10" />
-                <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-[#a7c9bb]/30 rounded-full blur-3xl -z-10" />
-                <div className="rounded-3xl overflow-hidden shadow-2xl border-[10px] border-white">
-                  <img
-                    src={HERO_IMAGE}
-                    alt="Équipe Freearcs Pharma Services en réunion"
-                    className="w-full h-[340px] lg:h-[440px] object-cover object-top"
-                    loading="eager"
-                  />
+      <section className="relative w-full h-[calc(100vh-80px)] p-0 m-0" data-testid="hero-section">
+        <Swiper
+          modules={[Autoplay, EffectFade, Navigation]}
+          effect="fade"
+          loop={true}
+          speed={800}
+          allowTouchMove={false}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          navigation={{
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
+          }}
+          className="w-full h-full"
+        >
+          {/* Slide 1 */}
+          <SwiperSlide>
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: 'url(/header-6.jpg)' }}
+            />
+            <div className="relative h-full flex items-center">
+              <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 w-full">
+                <div className="w-full sm:w-8/12 lg:w-7/12">
+                  <div className="overflow-hidden">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 lg:mb-10">
+                      <span className="text-[#573D4E]">L’expertise au service de</span>{' '}<span className="text-[#2E9013]">la recherche clinique</span>
+                    </h1>
+                  </div>
+                  <div className="overflow-hidden">
+                    <p className="text-lg sm:text-xl md:text-2xl text-black font-medium leading-tight mb-10 lg:mb-14">
+                      Votre partenaire de confiance pour vos études cliniques de la phase I à la phase post-commercialisation.
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-4">
+                    <Link to="/contact" className="bg-[#2E9013] hover:bg-[#573D4E] text-white font-semibold px-6 py-3 rounded inline-flex items-center transition-colors">
+                      Discutez de votre projet
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
+                    <Link to="/services" className="bg-[#F5A617] hover:bg-[#573D4E] text-white font-semibold px-6 py-3 rounded inline-flex items-center transition-colors">
+                      Nos Services
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
+          </SwiperSlide>
 
+          {/* Slide 2 */}
+          <SwiperSlide>
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: 'url(/header-5.jpg)' }}
+            />
+            <div className="relative h-full flex items-center">
+              <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 w-full">
+                <div className="w-full sm:w-8/12 lg:w-7/12">
+                  <div className="overflow-hidden">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 lg:mb-10">
+                      <span className="text-[#573D4E]">Un périmètre complet</span>{' '}<span className="text-[#2E9013]">pour vos études cliniques.</span>
+                    </h1>
+                  </div>
+                  <div className="overflow-hidden">
+                    <p className="text-lg sm:text-xl md:text-2xl text-black font-medium leading-tight mb-10 lg:mb-14">
+                      Parce que chaque maladie est curable, nous unissons notre expertise à la vôtre pour offrir à chaque patient une solution thérapeutique adaptée.
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-4">
+                    <Link to="/contact" className="bg-[#2E9013] hover:bg-[#573D4E] text-white font-semibold px-6 py-3 rounded inline-flex items-center transition-colors">
+                      Discutez de votre projet
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
+                    <Link to="/services" className="bg-[#F5A617] hover:bg-[#573D4E] text-white font-semibold px-6 py-3 rounded inline-flex items-center transition-colors">
+                      Nos Services
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          {/* Slide 3 */}
+          <SwiperSlide>
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: 'url(/header-1.jpg)' }}
+            />
+            <div className="relative h-full flex items-center">
+              <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 w-full">
+                <div className="w-full sm:w-8/12 lg:w-7/12">
+                  <div className="overflow-hidden">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 lg:mb-10">
+                      <span className="text-[#573D4E]">Élargissons le choix thérapeutique</span>{' '}<span className="text-[#2E9013]">pour chaque patient.</span>
+                    </h1>
+                  </div>
+                  <div className="overflow-hidden">
+                    <p className="text-lg sm:text-xl md:text-2xl text-black font-medium leading-tight mb-10 lg:mb-14">
+                      Médicaments, dispositifs médicaux et produits hors santé. Études interventionnelles, observationnelles et de vie réelle (RWE).
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-4">
+                    <Link to="/contact" className="bg-[#2E9013] hover:bg-[#573D4E] text-white font-semibold px-6 py-3 rounded inline-flex items-center transition-colors">
+                      Discutez de votre projet
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
+                    <Link to="/services" className="bg-[#F5A617] hover:bg-[#573D4E] text-white font-semibold px-6 py-3 rounded inline-flex items-center transition-colors">
+                      Nos Services
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          {/* Custom Navigation */}
+          <div className="swiper-button-prev-custom absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-10 cursor-pointer w-12 h-12 flex items-center justify-center bg-black/20 hover:bg-black/40 rounded-full transition-colors">
+            <ChevronLeft className="w-6 h-6 text-white" />
           </div>
-        </div>
+          <div className="swiper-button-next-custom absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-10 cursor-pointer w-12 h-12 flex items-center justify-center bg-black/20 hover:bg-black/40 rounded-full transition-colors">
+            <ChevronRight className="w-6 h-6 text-white" />
+          </div>
+        </Swiper>
       </section>
 
       <style>{`
-        .hero-float { animation: heroFloat 8s ease-in-out infinite; }
-        @keyframes heroFloat {
-          0%, 100% { transform: translateY(0); }
-          50%       { transform: translateY(-12px); }
-        }
-        @keyframes blink {
-          0%, 100% { opacity: 1; }
-          50%       { opacity: 0; }
+        .swiper-button-prev-custom.swiper-button-disabled,
+        .swiper-button-next-custom.swiper-button-disabled {
+          opacity: 0.35;
+          cursor: auto;
+          pointer-events: none;
         }
       `}</style>
 
@@ -341,7 +306,7 @@ const HomePage = () => {
                   {t('home.whatWeDo')}
                 </h2>
                 <ul className="space-y-3 relative z-10">
-                  {(t('home.whatWeDoItems') || []).map((item, i) => (
+                  {Array.isArray(t('home.whatWeDoItems')) && t('home.whatWeDoItems').map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-[#2E9013] font-bold text-base leading-relaxed flex-shrink-0">▸</span>
                       <span className="text-[#4B5563] text-sm leading-relaxed">{item}</span>
@@ -394,7 +359,7 @@ const HomePage = () => {
       </section> */}
 
       {/* ── Core Services ────────────────────────────────────────────────── */}
-      <section className="py-20 bg-white" data-testid="services-section">
+      {/* <section className="py-20 bg-white" data-testid="services-section">
         <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
           <Reveal>
             <div className="text-center mb-12">
@@ -458,7 +423,7 @@ const HomePage = () => {
             </div>
           </Reveal>
         </div>
-      </section>
+      </section> */}
 
       {/* ── ANSM Fast-Track ──────────────────────────────────────────────── */}
       {/* <section className="py-16 bg-[#FEF3DC]" data-testid="ansm-section">

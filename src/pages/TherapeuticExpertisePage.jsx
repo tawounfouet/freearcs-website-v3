@@ -1,290 +1,227 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
-import { HeroWaveTop, HeroWaveBottom } from '../components/GreenWave';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { ArrowRight, Beaker, Brain, Heart, Activity, Pill, Shield } from 'lucide-react';
+import { CheckCircle, ArrowRight, FlaskConical, Brain, Stethoscope } from 'lucide-react';
 import SEO from '@/components/SEO';
-
-const HERO_IMAGE = "/cardio-stethoscope-digital.webp";
-
-const ease = [0.25, 0.46, 0.45, 0.94];
-const fadeLeft  = { hidden: { opacity: 0, x: -48 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease } } };
-const fadeRight = { hidden: { opacity: 0, x: 48, scale: 0.97 }, visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.9, ease, delay: 0.15 } } };
-const staggerItem = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease } } };
-const heroStagger = { hidden: {}, visible: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } } };
 
 const TherapeuticExpertisePage = () => {
   const { t } = useLanguage();
 
-  const titleParts = t('therapeuticExpertise.title').split('—');
-  const titleMain  = titleParts[0].trim().split(' ');
-  const titleFirst = titleMain.slice(0, -1).join(' ');
-  const titleLast  = titleMain[titleMain.length - 1];
-  const titleRest  = titleParts[1]?.trim();
-
   return (
-    <div className="min-h-screen bg-muted" data-testid="therapeutic-expertise-page">
+    <div className="min-h-screen bg-[#F9FAFD]" data-testid="therapeutic-expertise-page">
       <SEO
-        title={t('therapeuticExpertise.metaTitle')}
-        description={t('therapeuticExpertise.metaDescription')}
+        title="Expertise Thérapeutique — Oncologie, SNC, Maladies Rares | Freearcs Pharma Services"
+        description="Expertise CRO sur les aires thérapeutiques complexes : oncologie, SNC, maladies rares, dermatologie, cardiologie, pneumologie. Études interventionnelles, observationnelles et RWE."
         url="/therapeutic-expertise"
       />
 
-      {/* ── Hero ── */}
-      <section
-        className="relative flex items-center justify-center overflow-hidden pt-32 pb-32 xl:pt-48 xl:pb-48 bg-white"
-        data-testid="therapeutic-hero"
-      >
-        <HeroWaveTop />
-        <HeroWaveBottom />
-
-        <div className="relative z-20 max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 w-full">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-
-            {/* Colonne gauche — texte */}
-            <motion.div
-              className="lg:w-7/12 text-center lg:text-left"
-              initial="hidden"
-              animate="visible"
-              variants={heroStagger}
-            >
-              <motion.h1
-                className="font-raleway text-3xl sm:text-4xl lg:text-5xl font-bold text-[#573D4E] leading-tight mb-8"
-                data-testid="therapeutic-title"
-                variants={fadeLeft}
-              >
-                <span className="lg:whitespace-nowrap">
-                  {titleFirst}
-                  <span className="italic font-normal text-[#2E9013]"> {titleLast}</span>
-                </span>
-                {titleRest && (
-                  <>
-                    <br className="hidden lg:block" />
-                    {titleRest}
-                  </>
-                )}
-              </motion.h1>
-
-              <motion.div className="max-w-2xl mb-10 mx-auto lg:mx-0" variants={staggerItem}>
-                <p className="text-[#4B5563] text-lg leading-relaxed">
-                  {t('therapeuticExpertise.introText')}
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="flex flex-wrap justify-center lg:justify-start gap-4 mb-12"
-                variants={staggerItem}
-              >
-                <Button
-                  asChild
-                  className="bg-[#2E9013] hover:bg-[#1f6b0d] text-white font-semibold px-8 py-4 rounded shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-                  data-testid="therapeutic-cta-discuss"
-                >
-                  <Link to="/contact">
-                    {t('therapeuticExpertise.discuss')}
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="bg-gray-50 border border-gray-200 text-[#2B2B2B] hover:bg-white hover:shadow-md font-semibold px-8 py-4 rounded transition-all duration-200"
-                >
-                  <Link to="/services">
-                    {t('home.ctaExplore')}
-                    <ArrowRight className="ml-2 w-4 h-4 opacity-50" />
-                  </Link>
-                </Button>
-              </motion.div>
-
-              <motion.div
-                className="flex items-center justify-center lg:justify-start gap-4 opacity-70"
-                variants={staggerItem}
-              >
-                <span className="text-xs uppercase tracking-[0.2em] text-gray-400 font-bold">{t('home.memberOf')}</span>
-                <div className="h-8 w-px bg-gray-300" />
-                <img src={"/AFCROs.png"} alt="AFCROs" className="h-8 w-auto object-contain" />
-              </motion.div>
-            </motion.div>
-
-            {/* Colonne droite — image flottante */}
-            <motion.div
-              className="lg:w-5/12 relative"
-              initial="hidden"
-              animate="visible"
-              variants={fadeRight}
-            >
-              <div className="hero-float relative z-10">
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#2E9013]/10 rounded-full blur-3xl -z-10" />
-                <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-[#a7c9bb]/30 rounded-full blur-3xl -z-10" />
-                <div className="rounded-3xl overflow-hidden shadow-2xl border-[10px] border-white">
-                  <img
-                    src={HERO_IMAGE}
-                    alt="Cardiologie et oncologie — recherche clinique sur les maladies cardiovasculaires"
-                    className="w-full h-[340px] lg:h-[440px] object-cover"
-                    loading="eager"
-                  />
+      {/* ── Hero ───────────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
+          style={{ backgroundImage: 'url(/assets/img/background-2.jpg)' }}
+        />
+        <div className="absolute inset-0 bg-[#2B2B2B]/60" />
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 relative z-10">
+          <div className="pt-24 pb-20 lg:pt-32 lg:pb-24">
+            <div className="w-full text-center">
+              <div className="overflow-hidden">
+                <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-0 leading-none">
+                  Expertise Thérapeutique
+                </h1>
+                <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-center gap-2">
+                  <div className="flex items-center justify-center gap-2 text-white/80 font-bold text-lg">
+                    <Link to="/" className="text-white hover:text-white/80 transition-colors">{t('nav.home')}</Link>
+                    <span className="text-white/60">/</span>
+                    <span className="text-white">Expertise Thérapeutique</span>
+                  </div>
+                  {/* <span className="hidden sm:inline-block text-white/40">|</span>
+                  <span className="text-[#2E9013] text-lg font-medium italic">
+                    Oncologie, SNC, maladies rares, en France et à l'international.
+                  </span> */}
                 </div>
               </div>
-            </motion.div>
-
+            </div>
           </div>
         </div>
       </section>
 
-      <style>{`
-        .hero-float { animation: heroFloat 8s ease-in-out infinite; }
-        @keyframes heroFloat {
-          0%, 100% { transform: translateY(0); }
-          50%       { transform: translateY(-12px); }
-        }
-      `}</style>
+      {/* ── Introduction ────────────────────────────────────────────────── */}
+      <section className="py-16 lg:py-24 bg-[#F9FAFD]">
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20">
+          <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 lg:p-16">
+            <p className="text-[#4B5563] text-lg leading-relaxed first-letter:text-5xl first-letter:font-bold first-letter:text-[#2E9013] first-letter:mr-3 first-letter:float-left mb-6">
+              Nous soutenons nos partenaires dans la conduite d'études interventionnelles, observationnelles et épidémiologiques, incluant des projets sur les données de vie réelle (RWD/RWE). Notre expertise couvre les médicaments, les dispositifs médicaux, et les Hors Produits de Santé.
+            </p>
 
-      {/* Oncology Section */}
-      <section className="py-20 bg-muted" data-testid="oncology-section">
-        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-          <Card className="shadow-xl overflow-hidden">
-            <CardHeader className="bg-[#EAF5E1] p-8">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-[#2E9013] flex items-center justify-center">
-                  <Beaker className="w-8 h-8 text-white" />
-                </div>
-                <div>
-                  <span className="text-sm font-medium text-[#2E9013] bg-white px-3 py-1 rounded-full">
-                    {t('therapeuticExpertise.priorityArea')}
-                  </span>
-                  <CardTitle className="font-raleway text-2xl lg:text-3xl font-bold text-[#573D4E] mt-2">
-                    {t('therapeuticExpertise.oncology.title')}
-                  </CardTitle>
-                </div>
+            <div className="grid md:grid-cols-2 gap-10 mt-10">
+              {/* Types d'études */}
+              <div>
+                <h3 className="text-[#573D4E] font-bold text-xl mb-5">L'entreprise intervient sur</h3>
+                <ul className="space-y-3">
+                  {[
+                    { label: 'Études interventionnelles', detail: "étude de dérisquage, POC, First in Human, Essais cliniques contrôlés (Phase I à IV), investigations cliniques, PMCF" },
+                    { label: 'Études observationnelles', detail: "Cohortes, registres, études post-AMM, suivi long terme" },
+                    { label: 'Études épidémiologiques', detail: "Études de prévalence, d'incidence, facteurs de risque" },
+                    { label: 'Projets Real-World Evidence (RWE)', detail: "sur les Données de vie réelle" },
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-[#2E9013] flex-shrink-0 mt-0.5" />
+                      <span className="text-[#4B5563] leading-relaxed">
+                        <strong className="text-[#2B2B2B]">{item.label} :</strong> {item.detail}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </CardHeader>
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                {t('therapeuticExpertise.oncology.items').map((item) => (
-                  <div key={item} className="bg-muted p-4 rounded-lg text-center">
-                    <span className="text-[#573D4E] font-medium">{item}</span>
-                  </div>
+
+              {/* Domaines couverts */}
+              <div>
+                <h3 className="text-[#573D4E] font-bold text-xl mb-5">Domaines couverts</h3>
+                <ul className="space-y-3">
+                  {[
+                    { label: 'Médicaments', detail: "produits de santé soumis à Autorisation de Mise sur le Marché" },
+                    { label: 'Dispositifs médicaux', detail: "pré-marquage CE et suivi post-marquage" },
+                    { label: 'Produits hors santé', detail: "études cliniques sur produits cosmétiques, compléments, nutraceutiques" },
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-[#2E9013] flex-shrink-0 mt-0.5" />
+                      <span className="text-[#4B5563] leading-relaxed">
+                        <strong className="text-[#2B2B2B]">{item.label} :</strong> {item.detail}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Aires thérapeutiques prioritaires ───────────────────────────── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#573D4E]">Aires Thérapeutiques Prioritaires</h2>
+            <div className="w-16 h-1 bg-[#2E9013] mx-auto mt-4"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+
+            {/* Card Oncologie */}
+            <div className="bg-[#F9FAFD] rounded-xl p-8 md:p-10">
+              <div className="flex items-center gap-3 mb-2">
+                <FlaskConical className="w-6 h-6 text-[#2E9013]" />
+                <h3 className="font-bold text-[#573D4E] text-2xl">Oncologie</h3>
+              </div>
+              <p className="text-[#4B5563] italic mb-6">Expertise en Phases précoces (I & II)</p>
+
+              <div className="space-y-3 mb-8">
+                <p className="text-[#4B5563] leading-relaxed">
+                  <strong className="text-[#2B2B2B]">Innovation et First-in-Human :</strong> pilotage de Phase I et II, immunothérapies, vaccins thérapeutiques, cibles innovantes (ex. CLDN1+)
+                </p>
+                <p className="text-[#4B5563] leading-relaxed">
+                  <strong className="text-[#2B2B2B]">Protocoles complexes :</strong> designs adaptatifs, populations vulnérables (pédiatrie, sujets âgés)
+                </p>
+              </div>
+
+              <h5 className="font-semibold text-[#2B2B2B] mb-3">Indications couvertes</h5>
+              <div className="flex flex-wrap gap-2">
+                {['Tumeurs solides', 'Lymphomes', 'Myélome multiple', 'Leucémies (LLC, LAM)', 'Cancer de la vessie', 'GIST', 'Implants mammaires', 'Radiothérapie'].map((item) => (
+                  <span key={item} className="px-3 py-1 bg-[#EAF5E1] text-[#2E9013] text-sm font-medium rounded-full">
+                    {item}
+                  </span>
                 ))}
               </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+            </div>
 
-      {/* CNS & Rare Diseases Section */}
-      <section className="py-20 bg-white" data-testid="cns-section">
-        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-          <Card className="shadow-xl overflow-hidden">
-            <CardHeader className="bg-[#EDE8EB] p-8">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-[#573D4E] flex items-center justify-center">
-                  <Brain className="w-8 h-8 text-white" />
-                </div>
-                <div>
-                  <span className="text-sm font-medium text-[#573D4E] bg-white px-3 py-1 rounded-full">
-                    {t('therapeuticExpertise.priorityArea')}
+            {/* Card SNC & Maladies Rares */}
+            <div className="bg-[#F9FAFD] rounded-xl p-8 md:p-10">
+              <div className="flex items-center gap-3 mb-2">
+                <Brain className="w-6 h-6 text-[#573D4E]" />
+                <h3 className="font-bold text-[#573D4E] text-2xl">SNC et Maladies Rares</h3>
+              </div>
+              <p className="text-[#4B5563] italic mb-6">Phases précoces et études pivots</p>
+
+              <div className="space-y-3 mb-8">
+                <p className="text-[#4B5563] leading-relaxed">
+                  <strong className="text-[#2B2B2B]">Pathologies neurodégénératives :</strong> pilotage d'études complexes sur populations à inclusion difficile
+                </p>
+                <p className="text-[#4B5563] leading-relaxed">
+                  <strong className="text-[#2B2B2B]">Maladies orphelines :</strong> expertise des designs adaptés aux faibles effectifs
+                </p>
+              </div>
+
+              <h5 className="font-semibold text-[#2B2B2B] mb-3">Indications couvertes</h5>
+              <div className="flex flex-wrap gap-2">
+                {["Maladie d'Alzheimer", 'Maladie de Parkinson', 'Sclérose latérale amyotrophique (SLA)', 'Troubles neurodéveloppementaux', 'Spasticité', 'Dystrophie musculaire de Duchenne', 'Maladie de Wilson', 'FAOD', 'Atrophie multisystématisée'].map((item) => (
+                  <span key={item} className="px-3 py-1 bg-[#EDE8EB] text-[#573D4E] text-sm font-medium rounded-full">
+                    {item}
                   </span>
-                  <CardTitle className="font-raleway text-2xl lg:text-3xl font-bold text-[#573D4E] mt-2">
-                    {t('therapeuticExpertise.cns.title')}
-                  </CardTitle>
-                </div>
+                ))}
               </div>
-            </CardHeader>
-            <CardContent className="p-8">
-              {/* Média 1 — Médecin + bébé + capsules · Pédiatrie / CNS · directive médias v1.0 */}
-              <div className="grid lg:grid-cols-3 gap-8 items-start">
-                <div className="lg:col-span-2 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {t('therapeuticExpertise.cns.items').map((item) => (
-                    <div key={item} className="bg-muted p-4 rounded-lg text-center">
-                      <span className="text-[#573D4E] font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="rounded-xl overflow-hidden shadow-lg">
-                  <img
-                    src={"/medecin-bebe-capsules.webp"}
-                    alt="Médecin avec bébé — pédiatrie, maladies rares et SNC en recherche clinique"
-                    className="w-full h-[220px] object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+            </div>
 
-      {/* Other Areas Section */}
-      <section className="py-20 bg-muted" data-testid="other-areas-section">
-        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-          <h2 className="font-raleway text-2xl lg:text-3xl font-bold text-[#573D4E] mb-8">
-            {t('therapeuticExpertise.other.title')}
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {t('therapeuticExpertise.other.items').map((item, index) => {
-              const icons = [Shield, Pill, Activity, Heart, Activity];
-              const Icon = icons[index % icons.length];
-              return (
-                <Card key={item} className="text-center hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 rounded-full bg-[#FEF3DC] flex items-center justify-center mx-auto mb-4">
-                      <Icon className="w-6 h-6 text-[#F5A617]" />
-                    </div>
-                    <p className="text-[#573D4E] font-medium">{item}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <p className="text-4xl font-bold text-[#2E9013] mb-2">30+</p>
-              <p className="text-[#4B5563]">{t('therapeuticExpertise.statsProjects')}</p>
+      {/* ── Autres domaines ─────────────────────────────────────────────── */}
+      <section className="py-16 lg:py-20 bg-[#F9FAFD]">
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20">
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <Stethoscope className="w-6 h-6 text-[#F5A617]" />
+              <h2 className="text-2xl md:text-3xl font-bold text-[#573D4E]">Autres Domaines Couverts</h2>
             </div>
-            <div>
-              <p className="text-4xl font-bold text-[#573D4E] mb-2">10+</p>
-              <p className="text-[#4B5563]">{t('therapeuticExpertise.statsAreas')}</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-[#F5A617] mb-2">I–IV</p>
-              <p className="text-[#4B5563]">{t('therapeuticExpertise.statsPhases')}</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-[#D81C20] mb-2">EU & FR</p>
-              <p className="text-[#4B5563]">{t('therapeuticExpertise.statsRegulatory')}</p>
-            </div>
+            <div className="w-16 h-1 bg-[#F5A617] mx-auto mt-4"></div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { label: 'Dermatologie', detail: 'psoriasis, lupus, dermatite atopique' },
+              { label: 'Maladies infectieuses et vaccins', detail: '' },
+              { label: 'Pneumologie', detail: 'BPCO' },
+              { label: 'Rhumatologie', detail: '' },
+              { label: 'Cardiologie', detail: 'PAF, LVAD' },
+            ].map((item) => (
+              <div key={item.label} className="bg-white rounded-xl p-6 shadow-sm flex items-start gap-4">
+                <CheckCircle className="w-5 h-5 text-[#F5A617] flex-shrink-0 mt-0.5" />
+                <span className="text-[#4B5563] leading-relaxed">
+                  <strong className="text-[#2B2B2B]">{item.label}</strong>
+                  {item.detail && ` : ${item.detail}`}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative py-16 bg-[#573D4E] overflow-hidden" data-testid="therapeutic-cta-section">
-        <img
-          src={"/freearcs-pharma-services_logo-white.svg"}
-          alt="" aria-hidden="true"
-          className="absolute right-8 top-1/2 -translate-y-1/2 w-64 h-auto pointer-events-none select-none"
-          style={{ opacity: 0.07 }}
-        />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-raleway text-2xl lg:text-3xl font-bold text-white mb-4">
-            {t('therapeuticExpertise.discuss')}
-          </h2>
-          <Button asChild className="bg-[#2E9013] hover:bg-white hover:text-[#573D4E] text-white font-semibold px-10 py-6 rounded-full text-lg" data-testid="therapeutic-contact-btn">
-            <Link to="/contact">
-              {t('nav.contactUs')}
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
-          </Button>
+      {/* ── CTA ────────────────────────────────────────────────────────── */}
+      <section className="py-16 lg:py-24 bg-[#F9FAFD]">
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20">
+          <div className="bg-[#2E9013] rounded-2xl p-10 lg:p-16 text-center relative overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-10"
+              style={{ backgroundImage: 'url(/assets/img/background-2.jpg)' }}
+            />
+            <div className="relative z-10">
+              <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                Vous préparez une étude clinique ?
+              </h2>
+              <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+                Partagez-nous votre projet, nous vous proposerons l'approche adaptée à votre situation.
+              </p>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 bg-white text-[#2E9013] hover:bg-gray-100 font-bold px-10 py-4 rounded-full shadow-lg transition-all text-lg"
+                data-testid="therapeutic-contact-btn"
+              >
+                Discutons de votre projet
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </div>

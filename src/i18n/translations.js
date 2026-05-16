@@ -213,7 +213,7 @@ export const translations = {
       ]
     },
     therapeuticExpertise: {
-      title: "Expertise Thérapeutique — Oncologie, SNC, Maladies Rares et Au-delà",
+      title: "Expertise Thérapeutique",
       metaTitle: "Expertise thérapeutique — Oncologie, SNC, Maladies rares",
       metaDescription: "Oncologie, maladies rares, SNC, cardiologie, dermatologie : notre expertise couvre les domaines thérapeutiques les plus complexes de la recherche clinique.",
       oncology: {
@@ -402,7 +402,7 @@ export const translations = {
       serviceProjectManagement: "Project Management",
       serviceRegulatoryAffairs: "Regulatory Affairs",
       serviceFeasibilityMonitoring: "Feasibility & Monitoring",
-serviceLegalRepresentation: "Legal Representation EU"
+      serviceLegalRepresentation: "Legal Representation EU"
     },
     404: {
       title: "Page non trouvée",
@@ -439,6 +439,13 @@ serviceLegalRepresentation: "Legal Representation EU"
       meetFounder: "Meet our Founder",
       whatWeDo: "What We Do",
       whatWeDoText: "Freearcs Pharma Services supports clinical studies from preparation to execution, ensuring regulatory compliance, operational efficiency, and high-quality delivery — from Phase I early development to Phase IV post-marketing studies.",
+      whatWeDoItems: [
+        "Agile and independent CRO model",
+        "Proven methods on complex protocols: Phase I, pivotal studies, oncology, rare diseases",
+        "Tailored support: each mission aligned with your constraints and objectives",
+        "Regulatory expertise: France, EU, international requirements",
+        "Operational expertise: senior supervision and operational leadership"
+      ],
       operationalModel: "Operational Model",
       embeddedExecution: "Embedded execution model: direct integration within sponsor teams as operational lead",
       sponsorOversight: "Sponsor-side oversight: supporting sponsors in supervising external CROs — contract review, KPI monitoring, site compliance, regulatory reporting",

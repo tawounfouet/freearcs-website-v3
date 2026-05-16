@@ -27,7 +27,7 @@ const HeroBanner = ({ title, subtitle, breadcrumbs = [], testId }) => {
 
       {/* Content */}
       <div className="relative z-10 max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 text-center">
-        <h1 className="font-raleway text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
+        <h1 className="font-raleway text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 lg:mb-8 tracking-tight">
           {title}
         </h1>
         {subtitle && (

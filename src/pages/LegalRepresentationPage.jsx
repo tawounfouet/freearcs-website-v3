@@ -24,15 +24,35 @@ const LegalRepresentationPage = () => {
         url="/legal-representation"
       />
 
-      <HeroBanner
-        title={t('nav.legalRepresentation')}
-        subtitle={t('legalRepresentation.heroSubtitle')}
-        breadcrumbs={[
-          { label: t('nav.services'), path: '/services' },
-          { label: t('nav.legalRepresentation') },
-        ]}
-        testId="legal-rep-hero"
-      />
+      {/* ── Hero ───────────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
+          style={{ backgroundImage: 'url(/assets/img/background-2.jpg)' }}
+        />
+        <div className="absolute inset-0 bg-[#2B2B2B]/60" /> {/* Overlay */}
+
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 relative z-10">
+          <div className="pt-24 pb-20 lg:pt-32 lg:pb-24">
+            <div className="w-full text-center">
+              <div className="overflow-hidden">
+                <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-0 leading-none">
+                  {t('nav.legalRepresentation')}
+                </h1>
+                <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-center gap-4 sm:gap-2">
+                  <div className="flex items-center justify-center gap-2 text-white/80 font-bold text-lg">
+                    <Link to="/" className="text-white hover:text-white/80 transition-colors">{t('nav.home')}</Link>
+                    <span className="text-white/60">/</span>
+                    <Link to="/services" className="text-white hover:text-white/80 transition-colors">{t('nav.services')}</Link>
+                    <span className="text-white/60">/</span>
+                    <span className="text-white">{t('nav.legalRepresentation')}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <div className="bg-white py-8 flex justify-center" data-testid="legal-rep-cta-section">
@@ -124,7 +144,7 @@ const LegalRepresentationPage = () => {
       </section>
 
       {/* Regulatory Framework */}
-      <section className="py-16 bg-[#573D4E]" data-testid="regulatory-section">
+      <section className="py-16 mb-16 lg:mb-24 bg-[#2B2B2B]" data-testid="regulatory-section">
         <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
           <h2 className="font-raleway text-2xl lg:text-3xl font-bold text-white mb-8 text-center">
             {t('legalRepresentation.regulatoryFrameworkTitle')}
@@ -148,7 +168,7 @@ const LegalRepresentationPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-16 bg-[#573D4E] overflow-hidden" data-testid="legal-cta-section">
+      {/* <section className="relative py-16 bg-[#573D4E] overflow-hidden" data-testid="legal-cta-section">
         <img
           src={LOGO_WHITE}
           alt=""
@@ -171,7 +191,7 @@ const LegalRepresentationPage = () => {
             </Link>
           </Button>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

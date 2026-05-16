@@ -78,28 +78,35 @@ const ContactPage = () => {
         url="/contact"
       />
 
-      {/* ── Hero ── */}
-      <section className="relative bg-[#573D4E] overflow-hidden py-8 lg:py-12" data-testid="contact-hero">
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <polygon points="1100,0 1440,0 1440,280" fill="rgba(255,255,255,0.04)" />
-          <polygon points="1200,420 1440,320 1440,420" fill="rgba(255,255,255,0.05)" />
-          <polygon points="-60,0 280,0 180,200 -60,140" fill="rgba(46,144,19,0.08)" />
-          <polygon points="0,320 200,420 0,420" fill="rgba(255,255,255,0.04)" />
-          <polygon points="180,60 340,20 420,120 300,180 160,140" fill="rgba(245,166,23,0.07)" />
-          <polygon points="850,20 1020,0 1060,160 920,190 800,100" fill="rgba(255,255,255,0.03)" />
-          <polygon points="560,340 750,300 800,420 520,420" fill="rgba(46,144,19,0.06)" />
-          <polygon points="1100,180 1280,140 1350,280 1160,310" fill="rgba(245,166,23,0.05)" />
-        </svg>
-        <div className="relative z-10 max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 text-center">
-          <h1 className="font-raleway text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight" data-testid="contact-title">
-            Contact
-          </h1>
-          <p className="text-white/75 text-lg max-w-2xl mx-auto leading-relaxed">{t('contact.intro')}</p>
-        </div>
-        <div className="relative z-10 mt-8 flex items-center justify-center gap-1.5 text-sm text-white/60">
-          <Link to="/" className="hover:text-white transition-colors">{t('nav.home')}</Link>
-          <ChevronRight className="w-3.5 h-3.5" />
-          <span className="text-white/90 font-medium">Contact</span>
+      {/* ── Hero ───────────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
+          style={{ backgroundImage: 'url(/assets/img/background-2.jpg)' }}
+        />
+        <div className="absolute inset-0 bg-[#2B2B2B]/60" /> {/* Overlay */}
+
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 relative z-10">
+          <div className="pt-24 pb-20 lg:pt-32 lg:pb-24">
+            <div className="w-full text-center">
+              <div className="overflow-hidden">
+                <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-0 leading-none">
+                  Contact
+                </h1>
+                <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-center gap-4 sm:gap-2">
+                  <div className="flex items-center justify-center gap-2 text-white/80 font-bold text-lg">
+                    <Link to="/" className="text-white hover:text-white/80 transition-colors">{t('nav.home')}</Link>
+                    <span className="text-white/60">/</span>
+                    <span className="text-white">Contact</span>
+                  </div>
+                  {/* <span className="hidden sm:inline-block text-white/40">|</span>
+                  <span className="text-[#2E9013] text-lg font-medium italic">
+                    {t('contact.intro')}
+                  </span> */}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

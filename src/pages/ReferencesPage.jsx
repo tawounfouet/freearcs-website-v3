@@ -43,17 +43,34 @@ const ReferencesPage = () => {
         url="/references"
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-white overflow-hidden" data-testid="references-hero">
-        <GreenWaveHeader />
-        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 pt-10 pb-20">
-          <div className="max-w-3xl">
-            <h1 className="font-raleway text-3xl sm:text-4xl lg:text-5xl font-bold text-[#573D4E] mb-6" data-testid="references-title">
-              {t('references.title')}
-            </h1>
-            <p className="text-[#4B5563] text-lg leading-relaxed">
-              {t('references.intro')}
-            </p>
+      {/* ── Hero ───────────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
+          style={{ backgroundImage: 'url(/assets/img/background-2.jpg)' }}
+        />
+        <div className="absolute inset-0 bg-[#2B2B2B]/60" /> {/* Overlay */}
+
+        <div className="max-w-[1800px] mx-auto px-6 lg:px-12 xl:px-20 relative z-10">
+          <div className="pt-24 pb-20 lg:pt-32 lg:pb-24">
+            <div className="w-full lg:w-8/12">
+              <div className="overflow-hidden">
+                <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-0 leading-none">
+                  {t('references.metaTitle') || t('references.title')}
+                </h1>
+                <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-2">
+                  <div className="flex items-center gap-2 text-white/80 font-bold text-lg">
+                    <Link to="/" className="text-white hover:text-white/80 transition-colors">{t('nav.home')}</Link>
+                    <span className="text-white/60">/</span>
+                    <span className="text-white">{t('references.metaTitle') || t('references.title')}</span>
+                  </div>
+                  <span className="hidden sm:inline-block text-white/40">|</span>
+                  <span className="text-[#2E9013] text-lg font-medium italic">
+                    {t('references.intro')}
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

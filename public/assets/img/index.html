@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Elixir | Beautiful Site Template for Agencies &amp; Professionals</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="vendors/overlayscrollbars/OverlayScrollbars.min.js"></script>
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="vendors/hamburgers/hamburgers.min.css" rel="stylesheet">
+    <link href="vendors/loaders.css/loaders.min.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link href="assets/css/user.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <!-- <div class="bg-primary py-3 d-none d-sm-block text-white fw-bold">
+      <div class="container">
+        <div class="row align-items-center gx-4">
+          <div class="col-auto d-none d-lg-block fs--1"><span class="fas fa-map-marker-alt text-warning me-2" data-fa-transform="grow-3"></span>1010 Avenue, New York, NY 10018 US. </div>
+          <div class="col-auto ms-md-auto order-md-2 d-none d-sm-flex fs--1 align-items-center"><span class="fas fa-clock text-warning me-2" data-fa-transform="grow-3"></span>Mon-Sat, 8.00-18.00. Sunday CLOSED</div>
+          <div class="col-auto"><span class="fas fa-phone-alt text-warning" data-fa-transform="shrink-3"></span><a class="ms-2 fs--1 d-inline text-white fw-bold" href="tel:2123865575">212 386 5575, 212 386 5576</a></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- ===============================================-->
+    <!--    Header Freearcs Pharma Services           -->
+    <!--===============================================-->
+    <div class="sticky-top navbar-elixir">
+    <!-- <div class="sticky-top navbar-elixir"> -->
+
+      <div class="container-fluid px-4 px-lg-5">
+        <nav class="navbar navbar-expand-lg">
+
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/img/logo_fps.png" alt="Freearcs Pharma Services" style="height:3.5rem; width:auto;" />
+          </a>
+
+          <!-- Mobile toggle -->
+          <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#fpsNavbarCollapse" aria-controls="fpsNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger hamburger--emphatic"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="fpsNavbarCollapse">
+            <ul class="navbar-nav py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-2 me-lg-auto">
+
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Accueil</a>
+              </li>
+
+              <!-- À propos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-indicator" href="pages/about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">À propos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pages/about.html">Vision &amp; Mission</a></li>
+                  <li><a class="dropdown-item" href="pages/about.html#founder">Notre fondatrice</a></li>
+                  <li><a class="dropdown-item" href="pages/about.html#why-choose-us">Pourquoi nous choisir</a></li>
+                </ul>
+              </li>
+
+              <!-- Services -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-indicator" href="pages/service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pages/service.html">Tous nos services</a></li>
+                  <li><a class="dropdown-item" href="pages/service.html#legal">Représentation légale</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Expertise thérapeutique</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="news/newsroom.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+            </ul>
+
+            <!-- Right: Language switcher + CTA -->
+            <div class="d-flex align-items-center gap-2 ms-lg-3 py-3 py-lg-0">
+              <!-- <div class="d-flex align-items-center gap-1 me-2">
+                <button id="fps-btn-en" onclick="fpsSwitchLang('en')" class="btn btn-sm px-3 py-1 rounded fps-lang-btn fps-lang-active" style="font-size:.8125rem; border:none;">EN</button>
+                <button id="fps-btn-fr" onclick="fpsSwitchLang('fr')" class="btn btn-sm px-3 py-1 rounded fps-lang-btn" style="font-size:.8125rem; border:none;">FR</button>
+              </div> -->
+              <a class="btn btn-primary rounded-pill px-4 py-2 fw-semibold d-block d-lg-inline-block" href="contact.html">Nous contacter</a>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <section class="py-0">
+        <div class="swiper theme-slider min-vh-100" data-swiper='{"loop":true,"allowTouchMove":false,"autoplay":{"delay":5000},"effect":"fade","speed":800}'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-zanim-timeline="{}">
+              <div class="bg-holder" style="background-image:url(assets/img/header-6.jpg);">
+              </div>
+              <!--/.bg-holder-->
+
+              <div class="container">
+                <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1.5}'>
+                  <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
+                    <div class="overflow-hidden">
+                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>L’expertise au service de la recherche clinique</h1>
+                    </div>
+                    <div class="overflow-hidden">
+                      <p class="pt-4 mb-5 fs-1 fs-md-2 lh-xs" data-zanim-xs='{"delay":0.1}'>Votre partenaire de confiance pour vos études cliniques de la phase I à la phase post-commercialisation.</p>
+                    </div>
+                    <div class="overflow-hidden">
+                      <div data-zanim-xs='{"delay":0.2}'><a class="btn btn-primary me-3 mt-3" href="#!">Read more<span class="fas fa-chevron-right ms-2"></span></a><a class="btn btn-warning mt-3" href="contact.html">Contact us<span class="fas fa-chevron-right ms-2"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-zanim-timeline="{}">
+              <div class="bg-holder" style="background-image:url(assets/img/header-5.jpg);">
+              </div>
+              <!--/.bg-holder-->
+
+              <div class="container">
+                <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1.5}'>
+                  <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
+                    <div class="overflow-hidden">
+                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>Un périmètre complet pour vos études cliniques.</h1>
+                    </div>
+                    <div class="overflow-hidden">
+                      <p class="pt-4 mb-5 fs-1 fs-md-2 lh-xs" data-zanim-xs='{"delay":0.1}'>Parce que chaque maladie est curable, nous unissons notre expertise à la vôtre pour offrir à chaque patient une solution thérapeutique adaptée. .</p>
+                    </div>
+                    <div class="overflow-hidden">
+                      <div data-zanim-xs='{"delay":0.2}'><a class="btn btn-primary me-3 mt-3" href="#!">Read more<span class="fas fa-chevron-right ms-2"></span></a><a class="btn btn-warning mt-3" href="contact.html">Contact us<span class="fas fa-chevron-right ms-2"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-zanim-timeline="{}">
+              <div class="bg-holder" style="background-image:url(assets/img/header-1.jpg);">
+              </div>
+              <!--/.bg-holder-->
+
+              <div class="container">
+                <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1.5}'>
+                  <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
+                    <div class="overflow-hidden">
+                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>Élargissons le choix thérapeutique pour chaque patient.</h1>
+                    </div>
+                    <div class="overflow-hidden">
+                      <p class="pt-4 mb-5 fs-1 fs-md-2 lh-xs" data-zanim-xs='{"delay":0.1}'>Médicaments, dispositifs médicaux et produits hors santé. Études interventionnelles, observationnelles et de vie réelle (RWE).</p>
+                    </div>
+                    <div class="overflow-hidden">
+                      <div data-zanim-xs='{"delay":0.2}'><a class="btn btn-primary me-3 mt-3" href="#!">Discutez de votre projet<span class="fas fa-chevron-right ms-2"></span></a><a class="btn btn-warning mt-3" href="contact.html">Nos Services<span class="fas fa-chevron-right ms-2"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-nav">
+            <div class="swiper-button-prev"><span class="fas fa-chevron-left"></span></div>
+            <div class="swiper-button-next"><span class="fas fa-chevron-right"></span></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <!-- ============================================-->
+      <!-- Section Qui Sommes-Nous ==================-->
+      <section class="bg-white overflow-hidden py-6 py-lg-7">
+        <div class="container">
+          <div class="row align-items-center g-5 g-xl-7">
+
+            <!-- Visuel gauche -->
+            <div class="col-lg-5 order-lg-1"
+                 data-zanim-xs='{"from":{"opacity":0,"x":-40},"to":{"opacity":1,"x":0},"delay":0,"duration":0.9}'
+                 data-zanim-trigger="scroll">
+              <div class="position-relative" style="padding-bottom: 3rem;">
+
+                <!-- Image principale -->
+                <img
+                  class="img-fluid rounded-3 fps-about-img w-100"
+                  style="object-fit:cover; max-height:480px;"
+                  src="assets/img/interior-1.jpg"
+                  alt="Freearcs Pharma Services &mdash; &eacute;tudes cliniques"
+                />
+
+                <!-- Bloc accent vert en fond décalé -->
+                <div class="position-absolute rounded-3"
+                     style="top:1.5rem; left:-1.5rem; width:60%; height:60%;
+                            background: rgba(46,144,19,0.08); z-index:-1;">
+                </div>
+
+                <!-- Badge flottant bas-droite — Membre AFCROs -->
+                <div class="position-absolute bottom-0 end-0 me-n2"
+                     style="z-index:2;">
+                  <div class="bg-white rounded-3 shadow-sm px-4 py-3 d-flex align-items-center gap-3 border border-light" style="opacity:.85;">
+                    <span class="text-uppercase fw-bold" style="font-size:.65rem;letter-spacing:.18em;color:#9CA3AF;">Membre de</span>
+                    <div style="width:1px;height:2rem;background:#D1D5DB;flex-shrink:0;"></div>
+                    <img src="assets/img/AFCROs.png" alt="AFCROs" style="height:2rem;width:auto;object-fit:contain;" />
+                  </div>
+                </div>
+
+                <!-- Stat fondée -->
+                <div class="position-absolute top-0 end-0 mt-n3 me-3"
+                     style="z-index:2;">
+                  <div class="rounded-3 px-4 py-3 text-center shadow-sm"
+                       style="background:#573D4E; min-width:110px;">
+                    <p class="mb-0 fw-bold text-white lh-1" style="font-size:1.5rem;">2020</p>
+                    <p class="mb-0" style="font-size:.72rem;color:rgba(255,255,255,0.75);">Ann&eacute;e de cr&eacute;ation</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Texte droite -->
+            <div class="col-lg-7 order-lg-2 ps-lg-5"
+                 data-zanim-timeline="{}" data-zanim-trigger="scroll">
+
+
+              <!-- Eyebrow -->
+              <div class="overflow-hidden">
+
+                <div class="d-inline-flex align-items-center gap-2 mb-3" data-zanim-xs='{"delay":0}'>
+                  <!-- <span style="display:block;width:2rem;height:2px;background:#F5A617;"></span> -->
+                  <!-- <span class="text-uppercase fw-semibold" style="font-size:.75rem;letter-spacing:.12em;color:#F5A617;">Qui Sommes-Nous</span> -->
+                </div>
+              </div>
+
+              <!-- Titre -->
+              <!-- <div class="overflow-hidden">
+                <h2 class="lh-sm mb-4" style="font-size:clamp(1.6rem,3vw,2.4rem);" data-zanim-xs='{"delay":0.05}'>
+                  Freearcs Pharma Services,<br />
+                  <span style="color:#2E9013;">l&rsquo;extension agile</span><br />
+                  de votre &eacute;quipe clinique.
+                </h2>
+              </div> -->
+
+                            <h3 class="fs-2 fs-md-3">Qui Sommes-Nous</h3>
+
+              <!-- Trait séparateur court -->
+              <div class="overflow-hidden mb-4" data-zanim-xs='{"delay":0.08}'>
+                <hr class="short" style="margin-left:0;" />
+              </div>
+
+              <!-- Paragraphes -->
+              <div class="overflow-hidden">
+                <p class="mb-3 pe-lg-5" style="color:#6D7380; line-height:1.75;" data-zanim-xs='{"delay":0.1}'>
+                  CRO ind&eacute;pendante fond&eacute;e en&nbsp;2020, nous accompagnons <strong>laboratoires pharmaceutiques</strong>,
+                  biotechs, startups HealthTech et promoteurs acad&eacute;miques dans la conduite de leurs &eacute;tudes cliniques.
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <p class="mb-5 pe-lg-5" style="color:#6D7380; line-height:1.75;" data-zanim-xs='{"delay":0.13}'>
+                  Notre mod&egrave;le hybride associe l&rsquo;exigence des <strong>standards internationaux</strong>
+                  et la souplesse d&rsquo;une structure ind&eacute;pendante.
+                </p>
+              </div>
+
+              <!-- Stats inline -->
+              <div class="overflow-hidden mb-5" data-zanim-xs='{"delay":0.16}'>
+                <div class="d-flex flex-wrap gap-4">
+                  <div class="d-flex align-items-center gap-2 pe-4"
+                       style="border-right:1px solid rgba(87,61,78,.15);" class="fps-stat-border">
+                    <span class="fw-bold" style="font-size:1.75rem;color:#2E9013;line-height:1;">100<span style="font-size:1rem;">%</span></span>
+                    <span style="font-size:.8rem;color:#6D7380;line-height:1.2;max-width:5rem;">ind&eacute;pendant &amp; flexible</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 pe-4"
+                       style="border-right:1px solid rgba(87,61,78,.15);" class="fps-stat-border">
+                    <span class="fw-bold" style="font-size:1.75rem;color:#2E9013;line-height:1;">EU</span>
+                    <span style="font-size:.8rem;color:#6D7380;line-height:1.2;max-width:5rem;">r&egrave;glementation multi-pays</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="fw-bold" style="font-size:1.75rem;color:#2E9013;line-height:1;">5+</span>
+                    <span style="font-size:.8rem;color:#6D7380;line-height:1.2;max-width:5rem;">aires th&eacute;rapeutiques</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="overflow-hidden" data-zanim-xs='{"delay":0.2}'>
+                <a class="btn btn-primary rounded-pill px-5 py-2 fw-semibold me-3" href="pages/about.html">
+                  En savoir plus
+                  <span class="fas fa-arrow-right ms-2 fs--1"></span>
+                </a>
+                <a class="btn btn-outline-secondary rounded-pill px-5 py-2 fw-semibold" href="contact.html">
+                  Nous contacter
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================-->
+
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <!-- <section class="pt-0">
+
+        <div class="container">
+          <div class="row flex-center text-center pb-6">
+            <div class="col-12">
+              <div class="position-relative mt-4 py-5 py-md-11">
+                <div class="bg-holder rounded-3" style="background-image:url(assets/img/video-screenshot-2.jpg);">
+                </div>
+
+                <button class="btn-elixir-play" data-bigpicture="{&quot;ytSrc&quot;:&quot;jlWMTNZNOc0&quot;}" data-zanim-trigger="scroll" data-zanim-xs='{"from":{"opacity":0,"scale":0.8},"to":{"opacity":1,"scale":1},"duration":1}'><span class="fas fa-play fs-1"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <h5 data-zanim-xs='{"delay":0}'><span class="text-primary me-3 fas fa-users"></span>Awesome Team</h5>
+              <p class="mt-3 pe-3 pe-lg-5" data-zanim-xs='{"delay":0.1}'>Before talking destination, we shine a spotlight across your organization <br /> to fully understand it.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <h5 data-zanim-xs='{"delay":0}'><span class="text-primary me-3 fas fa-comments"></span>Excellent Support</h5>
+              <p class="mt-3 pe-3 pe-lg-5" data-zanim-xs='{"delay":0.1}'>If you face any trouble, you can always let our dedicated support team help you. They are ready for you 24/7.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <h5 data-zanim-xs='{"delay":0}'><span class="text-primary me-3 fas fa-bolt"></span>Faster Performance</h5>
+              <p class="mt-3 pe-3 pe-lg-5" data-zanim-xs='{"delay":0.1}'>We develop a systematic well-ordered process of analysis, from concept through implementation.</p>
+            </div>
+          </div>
+        </div>
+
+      </section> -->
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <!-- <section class="bg-100">
+
+        <div class="container">
+          <div class="text-center mb-6">
+            <h3 class="fs-2 fs-md-3">Our Services</h3>
+            <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
+          </div>
+          <div class="row g-0 position-relative mb-4 mb-lg-0">
+            <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative" style="min-height:400px;">
+              <div class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0  " style="background-image:url(assets/img/6.jpg);">
+              </div>
+
+            </div>
+            <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white rounded-bs-lg rounded-lg-bs-0 rounded-be-lg rounded-lg-be-0 rounded-lg-te-lg ">
+              <div class="elixir-caret d-none d-lg-block"></div>
+              <div class="d-flex align-items-center h-100">
+                <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden">
+                    <h5 data-zanim-xs='{"delay":0}'>Business Consulting</h5>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.1}'>As one of the world’s largest accountancy networks, elixir helps a diverse range of clients with a diverse range of needs.This is especially true of our Advisory Practice, which provides corporate finance and transaction services, business restructuring.</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <div data-zanim-xs='{"delay":0.2}'><a class="d-flex align-items-center" href="#!">Learn More
+                        <div class="overflow-hidden ms-2"><span class="d-inline-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'>&xrarr;</span></div>
+                      </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 position-relative mb-4 mb-lg-0">
+            <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative order-lg-2" style="min-height:400px;">
+              <div class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0  rounded-lg-ts-0" style="background-image:url(assets/img/7.jpg);">
+              </div>
+
+            </div>
+            <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white rounded-bs-lg rounded-lg-bs-0 rounded-be-lg  rounded-lg-be-0">
+              <div class="elixir-caret d-none d-lg-block"></div>
+              <div class="d-flex align-items-center h-100">
+                <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden">
+                    <h5 data-zanim-xs='{"delay":0}'>Tax consulting</h5>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.1}'>Elixir serves clients across the country and around the world as they navigate an increasingly complex tax landscape. Our tax professionals draw on deep experience and industry-specific knowledge to deliver clients the insights and innovation they need.</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <div data-zanim-xs='{"delay":0.2}'><a class="d-flex align-items-center" href="#!">Learn More
+                        <div class="overflow-hidden ms-2"><span class="d-inline-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'>&xrarr;</span></div>
+                      </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 position-relative mb-4 mb-lg-0">
+            <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative" style="min-height:400px;">
+              <div class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0 rounded-lg-ts-0 rounded-bs-0 rounded-lg-bs-lg " style="background-image:url(assets/img/8.jpg);">
+              </div>
+
+            </div>
+            <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white rounded-bs-lg rounded-lg-bs-0 rounded-be-lg  ">
+              <div class="elixir-caret d-none d-lg-block"></div>
+              <div class="d-flex align-items-center h-100">
+                <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden">
+                    <h5 data-zanim-xs='{"delay":0}'>Advisory</h5>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.1}'>To help you understand what this road looks like, we surveyed 1165 digital marketers across Europe and North America to explore current trends and priorities in digital marketing.</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <div data-zanim-xs='{"delay":0.2}'><a class="d-flex align-items-center" href="#!">Learn More
+                        <div class="overflow-hidden ms-2"><span class="d-inline-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'>&xrarr;</span></div>
+                      </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-7">
+            <div class="col-sm-6 col-lg-4 px-4 px-sm-3 mb-4 mb-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <h5 data-zanim-xs='{"delay":0}'><span class="text-primary fs-0 me-3 far fa-credit-card"></span>Special financing</h5>
+              <p class="mt-3 pe-3 pe-lg-5 mb-0" data-zanim-xs='{"delay":0.1}'>Apply for special financial support and earn exclusive rewards.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 px-4 px-sm-3 mb-4 mb-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <h5 data-zanim-xs='{"delay":0}'><span class="text-primary fs-0 me-3 fas fa-comment-alt"></span>Chat with team</h5>
+              <p class="mt-3 pe-3 pe-lg-5 mb-0" data-zanim-xs='{"delay":0.1}'>Have a question? Chat online with an expert. <a href='#!'>Start chatting <span class='fas fa-external-link-alt ms-1'></span></a></p>
+            </div>
+            <div class="col-sm-6 col-lg-4 px-4 px-sm-3 mb-4 mb-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <h5 data-zanim-xs='{"delay":0}'><span class="text-primary fs-0 me-3 fas fa-phone-alt"></span>Call a specialist</h5>
+              <p class="mt-3 pe-3 pe-lg-5 mb-0" data-zanim-xs='{"delay":0.1}'>Our 24/7 support team is ready for you at 1-800-MY-Elixir.</p>
+            </div>
+          </div>
+        </div>
+
+      </section> -->
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section>
+
+        <div class="container">
+          <div class="text-center mb-7">
+            <h3 class="fs-2 fs-md-3">Pourquoi Nous Choisir</h3>
+            <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
+          </div>
+          <div class="row">
+            <div class="col-lg-6 pe-lg-3"><img class="rounded-3 img-fluid" src="assets/img/why-choose-us.jpg" alt="Pourquoi nous choisir" /></div>
+            <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+
+              <div class="d-flex align-items-start gap-3 mb-4" data-zanim-xs='{"delay":0}'>
+                <span class="text-warning fw-bold fs-1 lh-1">&#9658;</span>
+                <div>
+                  <h5 class="fs-0 fs-lg-1 mb-1">Mod&egrave;le CRO ind&eacute;pendant, agile et flexible</h5>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-4" data-zanim-xs='{"delay":0.1}'>
+                <span class="text-warning fw-bold fs-1 lh-1">&#9658;</span>
+                <div>
+                  <h5 class="fs-0 fs-lg-1 mb-1">Protocoles complexes</h5>
+                  <p class="mb-0">M&eacute;thodes &eacute;prouv&eacute;es&nbsp;: Phase I, &eacute;tudes pivots, oncologie, maladies rares</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-4" data-zanim-xs='{"delay":0.2}'>
+                <span class="text-warning fw-bold fs-1 lh-1">&#9658;</span>
+                <div>
+                  <h5 class="fs-0 fs-lg-1 mb-1">Accompagnement sur mesure</h5>
+                  <p class="mb-0">Chaque mission align&eacute;e sur vos contraintes et objectifs</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-4" data-zanim-xs='{"delay":0.3}'>
+                <span class="text-warning fw-bold fs-1 lh-1">&#9658;</span>
+                <div>
+                  <h5 class="fs-0 fs-lg-1 mb-1">Ma&icirc;trise r&eacute;glementaire</h5>
+                  <p class="mb-0">France, UE et exigences internationales</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-4" data-zanim-xs='{"delay":0.4}'>
+                <span class="text-warning fw-bold fs-1 lh-1">&#9658;</span>
+                <div>
+                  <h5 class="fs-0 fs-lg-1 mb-1">Expertise op&eacute;rationnelle</h5>
+                  <p class="mb-0">Supervision senior et leadership op&eacute;rationnel</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <!-- <section class="bg-primary py-6 text-center text-md-start">
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md">
+              <h4 class="text-white mb-0">If you have any query related investment... <br class="d-md-none" />we are available 24/7</h4>
+            </div>
+            <div class="col-md-auto mt-md-0 mt-4"><a class="btn btn-light rounded-pill" href="contact.html">Contact Us</a></div>
+          </div>
+        </div>
+
+      </section> -->
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <!-- <section class="text-center">
+
+        <div class="container">
+          <div class="text-center">
+            <h3 class="fs-2 fs-md-3">Things You Get</h3>
+            <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="px-3 py-4 px-lg-4">
+                <div class="overflow-hidden"><img src="assets/img/icons/sharing.png" alt="icon" height="37" data-zanim-xs='{"delay":0}' /></div>
+                <div class="overflow-hidden">
+                  <h5 class="mt-3" data-zanim-xs='{"delay":0.1}'>Creative Support</h5>
+                </div>
+                <div class="overflow-hidden">
+                  <p class="mb-0" data-zanim-xs='{"delay":0.2}'>We transform brands, grow businesses, and tell brand and product stories in a most creative way.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="px-3 py-4 px-lg-4">
+                <div class="overflow-hidden"><img src="assets/img/icons/mail.png" alt="icon" height="37" data-zanim-xs='{"delay":0}' /></div>
+                <div class="overflow-hidden">
+                  <h5 class="mt-3" data-zanim-xs='{"delay":0.1}'>Creating Experiences</h5>
+                </div>
+                <div class="overflow-hidden">
+                  <p class="mb-0" data-zanim-xs='{"delay":0.2}'>We cover a large range of creative platforms and digital projects with one purpose: to create experiences.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="px-3 py-4 px-lg-4">
+                <div class="overflow-hidden"><img src="assets/img/icons/target.png" alt="icon" height="37" data-zanim-xs='{"delay":0}' /></div>
+                <div class="overflow-hidden">
+                  <h5 class="mt-3" data-zanim-xs='{"delay":0.1}'>Product Consulting</h5>
+                </div>
+                <div class="overflow-hidden">
+                  <p class="mb-0" data-zanim-xs='{"delay":0.2}'>We guide you through the pipelines that generate new products with higher potential and lower risk.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="px-3 py-4 px-lg-4">
+                <div class="overflow-hidden"><img src="assets/img/icons/world-globe.png" alt="icon" height="37" data-zanim-xs='{"delay":0}' /></div>
+                <div class="overflow-hidden">
+                  <h5 class="mt-3" data-zanim-xs='{"delay":0.1}'>Business Boosting</h5>
+                </div>
+                <div class="overflow-hidden">
+                  <p class="mb-0" data-zanim-xs='{"delay":0.2}'>We provide energy-efficient and environmentally conservative solutions to our clients to boost their business.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="px-3 py-4 px-lg-4">
+                <div class="overflow-hidden"><img src="assets/img/icons/money.png" alt="icon" height="37" data-zanim-xs='{"delay":0}' /></div>
+                <div class="overflow-hidden">
+                  <h5 class="mt-3" data-zanim-xs='{"delay":0.1}'>Strategic Approach</h5>
+                </div>
+                <div class="overflow-hidden">
+                  <p class="mb-0" data-zanim-xs='{"delay":0.2}'>Based on solid strategic framework and real, relevant research, we create prototypes, not presentations.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="px-3 py-4 px-lg-4">
+                <div class="overflow-hidden"><img src="assets/img/icons/data-analytics.png" alt="icon" height="37" data-zanim-xs='{"delay":0}' /></div>
+                <div class="overflow-hidden">
+                  <h5 class="mt-3" data-zanim-xs='{"delay":0.1}'>Logistic Consulting</h5>
+                </div>
+                <div class="overflow-hidden">
+                  <p class="mb-0" data-zanim-xs='{"delay":0.2}'>We work buy side and sell side to give our clienrts hard hitting answers and focus hard on best opportunities.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section> -->
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <!-- <section class="bg-primary">
+
+        <div class="container">
+          <div class="row align-items-center text-white">
+            <div class="col-lg-4">
+              <div class="border border-2 border-warning p-4 py-lg-5 text-center rounded-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                <div class="overflow-hidden">
+                  <h4 class="text-white" data-zanim-xs='{"delay":0}'>Request a call back</h4>
+                </div>
+                <div class="overflow-hidden">
+                  <p class="px-lg-1 text-100 mb-0" data-zanim-xs='{"delay":0.1}'>Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also email us if you would prefer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0">
+              <h5 class="text-white">I would like to discuss:</h5>
+              <form class="mt-4" onsubmit="return false">
+                <div class="row">
+                  <div class="col-6">
+                    <input class="form-control" type="hidden" name="to" value="username@domain.extension" />
+                    <input class="form-control" type="text" placeholder="Your Name" aria-label="Your Name" />
+                  </div>
+                  <div class="col-6">
+                    <input class="form-control" type="text" placeholder="Phone Number" aria-label="Phone Number" />
+                  </div>
+                  <div class="col-6 mt-4">
+                    <input class="form-control" type="text" placeholder="Subject" aria-label="Subject" />
+                  </div>
+                  <div class="col-6 mt-4">
+                    <button class="btn btn-warning w-100" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </section> -->
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+
+
+
+
+  
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <!-- <section class="bg-white">
+
+        <div class="container">
+          <div class="swiper theme-slider" data-swiper='{"loop":true,"slidesPerView":1,"autoplay":{"delay":5000}}'>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row px-lg-8">
+                  <div class="col-4 col-md-3 mx-auto"><img class="rounded-3 mx-auto img-fluid" src="assets/img/client1.png" alt="Member" /></div>
+                  <div class="col-md-9 mt-4 mt-md-0 px-4 px-sm-3">
+                    <p class="lead">Their work on our website and Internet marketing has made a significant different to our business. We’ve seen a 425% increase in quote requests from the website which has been pretty remarkable – but I’d always like to see more!</p>
+                    <h6 class="fs-0 mb-1 mt-4">Michael Clarke</h6>
+                    <p class="mb-0 text-500">CEO, A.E.T Institute</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row px-lg-8">
+                  <div class="col-4 col-md-3 mx-auto"><img class="rounded-3 mx-auto img-fluid" src="assets/img/client2.png" alt="Member" /></div>
+                  <div class="col-md-9 mt-4 mt-md-0 px-4 px-sm-3">
+                    <p class="lead">Writing case studies was a daunting task for us. We didn’t know where to begin or what questions to ask, and clients never seemed to follow through when we asked. Elixir team did everything – with almost no time or effort for me!</p>
+                    <h6 class="fs-0 mb-1 mt-4">Maria Sharapova</h6>
+                    <p class="mb-0 text-500">Managing Director, Themewagon Inc.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row px-lg-8">
+                  <div class="col-4 col-md-3 mx-auto"><img class="rounded-3 mx-auto img-fluid" src="assets/img/client3.png" alt="Member" /></div>
+                  <div class="col-md-9 mt-4 mt-md-0 px-4 px-sm-3">
+                    <p class="lead">As a sales gamification company, we were skeptical to work with a consultant to optimize our sales emails, but Elixir was highly recommended by many other Y-Combinator startups we knew. Elixir helped us run a ~6 week email campaign.</p>
+                    <h6 class="fs-0 mb-1 mt-4">David Beckham</h6>
+                    <p class="mb-0 text-500">Chairman, Harmony Corporation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-nav">
+              <div class="swiper-button-prev icon-item icon-item-lg"><span class="fas fa-chevron-left fs--2"></span></div>
+              <div class="swiper-button-next icon-item icon-item-lg"><span class="fas fa-chevron-right fs--2"></span></div>
+            </div>
+          </div>
+        </div>
+
+      </section> -->
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- Section Références — Logo Carousel        -->
+      <!-- ============================================-->
+      <section class="py-5 py-lg-6" style="background:#ffffff; border-top:1px solid #e8e8e4; border-bottom:1px solid #e8e8e4;">
+        <div class="container mb-4 text-center">
+          <h3 class="fs-2 fs-md-3">Ils nous font confiance</h3>
+            <!-- Trait séparateur court -->
+                <hr class="short"/>
+
+          <!-- <p class="text-uppercase fw-semibold mb-0" style="font-size:.72rem; letter-spacing:.14em; color:#F5A617;"></p> -->
+        </div>
+
+        <!-- Swiper carousel continu -->
+        <div class="swiper fps-ref-swiper" style="overflow:hidden;">
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Business and decision_logo.png" alt="Business and Decision" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Catalyst Logo.png" alt="Catalyst" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/kcr_logo.jpeg" alt="KCR" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Logo Biosenic.jpg" alt="Biosenic" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/logo Corwave.png" alt="Corwave" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Logo IKF_1024x428.png" alt="IKF" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Logo Innovaderm-Indero.png" alt="Innovaderm / Indero" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Logo Innovativ trial.jpeg" alt="Innovativ Trial" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Logo Klinikos.jpg" alt="Klinikos" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Logo Pharmalys LTD.png" alt="Pharmalys LTD" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/logo PRA ICON.png" alt="PRA / ICON" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Logo Premier Research.jpg" alt="Premier Research" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Logo Syneos Health.png" alt="Syneos Health" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/Parexel_2021_Logo.png" alt="Parexel" loading="lazy" />
+            </div>
+            <div class="swiper-slide fps-ref-slide">
+              <img src="assets/img/References/WCG_New_Logo.jpg" alt="WCG" loading="lazy" />
+            </div>
+
+          </div>
+        </div>
+
+        <style>
+          .fps-ref-slide {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            height: 72px;
+            padding: 0 1.5rem;
+          }
+          .fps-ref-slide img {
+            max-height: 48px;
+            width: auto;
+            max-width: 140px;
+            object-fit: contain;
+            filter: grayscale(100%) opacity(0.55);
+            transition: filter .3s ease;
+          }
+          .fps-ref-slide img:hover {
+            filter: grayscale(0%) opacity(1);
+          }
+        </style>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            new Swiper('.fps-ref-swiper', {
+              loop: true,
+              freeMode: true,
+              grabCursor: true,
+              speed: 4000,
+              autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              },
+              breakpoints: {
+                0:    { slidesPerView: 2, spaceBetween: 16 },
+                576:  { slidesPerView: 3, spaceBetween: 20 },
+                768:  { slidesPerView: 4, spaceBetween: 24 },
+                1024: { slidesPerView: 6, spaceBetween: 28 },
+              },
+            });
+          });
+        </script>
+
+      </section>
+
+      <!-- ============================================-->
+      <!-- Stats section after logo carousel           -->
+      <!-- ============================================-->
+      <section class="py-5" style="background:#ffffff;">
+        <div class="container">
+          <div class="row g-4 justify-content-center border-top pt-5">
+            <div class="col-md-4 text-center">
+              <p class="fw-bold mb-1" style="font-size:2.5rem; color:#2E9013;">30+</p>
+              <p class="mb-1" style="font-size:.7rem; color:rgba(46,144,19,0.6); text-transform:uppercase; letter-spacing:.1em;">Depuis 2020</p>
+              <p class="mb-0" style="font-size:.875rem; color:#6D7380;">Projets cliniques supervisés</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <p class="fw-bold mb-1" style="font-size:2.5rem; color:#573D4E;">65 %</p>
+              <p class="mb-1" style="font-size:.7rem; color:rgba(87,61,78,0.6); text-transform:uppercase; letter-spacing:.1em;">Rétention</p>
+              <p class="mb-0" style="font-size:.875rem; color:#6D7380;">Taux de fidélisation client</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <p class="fw-bold mb-1" style="font-size:2rem; color:#F5A617;">International</p>
+              <p class="mb-1" style="font-size:.7rem; color:rgba(245,166,23,0.7); text-transform:uppercase; letter-spacing:.1em;">Présence</p>
+              <p class="mb-0" style="font-size:.875rem; color:#6D7380;">France · Belgique · UK / Irlande · Suisse · Burkina-Faso</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- Section CTA                                 -->
+      <!-- ============================================-->
+      <section class="py-5 py-lg-6 mx-3 mx-sm-4 mx-lg-5 rounded-4 mb-5" style="background:#EAF5E1;">
+        <div class="container" style="max-width:900px;">
+          <div class="text-center">
+            <h2 class="fw-bold mb-2" style="font-size:clamp(1.4rem,3vw,1.9rem); color:#573D4E;"
+                data-zanim-xs='{"from":{"opacity":0,"y":20},"to":{"opacity":1,"y":0},"delay":0,"duration":0.7}'
+                data-zanim-trigger="scroll">
+              Vous préparez une étude clinique&nbsp;?
+            </h2>
+            <p class="mb-5" style="color:#4B5563; font-size:.975rem;"
+               data-zanim-xs='{"from":{"opacity":0,"y":16},"to":{"opacity":1,"y":0},"delay":0.08,"duration":0.7}'
+               data-zanim-trigger="scroll">
+              Premier contact en moins de 48&nbsp;h.
+            </p>
+            <a class="btn btn-primary rounded-pill px-5 py-3 fw-semibold shadow"
+               href="contact.html"
+               style="font-size:1rem; transition: transform .2s, box-shadow .2s;"
+               onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 28px rgba(46,144,19,.3)'"
+               onmouseout="this.style.transform='';this.style.boxShadow=''">
+              Planifiez une discussion stratégique →
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <!-- <section class="bg-100">
+
+        <div class="container">
+          <div class="text-center mb-6">
+            <h3 class="fs-2 fs-md-3">Latest News</h3>
+            <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><a href="news/news.html"><img class="card-img-top" src="assets/img/9.jpg" alt="Featured Image" /></a>
+                <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden"><a href="news/news.html">
+                      <h5 data-zanim-xs='{"delay":0}'>Tax impacts of lease mean accounting change</h5>
+                    </a></div>
+                  <div class="overflow-hidden">
+                    <p class="text-500" data-zanim-xs='{"delay":0.1}'>By Paul O'Sullivan</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.2}'>HMRC released a consultation document to flag some potential tax impacts that a forthcoming change...</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" href="news/news.html">Learn More
+                        <div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
+                      </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><a href="news/news.html"><img class="card-img-top" src="assets/img/10.jpg" alt="Featured Image" /></a>
+                <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden"><a href="news/news.html">
+                      <h5 data-zanim-xs='{"delay":0}'>What brexit means for data protection law</h5>
+                    </a></div>
+                  <div class="overflow-hidden">
+                    <p class="text-500" data-zanim-xs='{"delay":0.1}'>By Enrico Ambrosi</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.2}'>Assuming that the referendum is not ignored completely, there are two possible futures for the UK...</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" href="news/news.html">Learn More
+                        <div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
+                      </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><a href="news/news.html"><img class="card-img-top" src="assets/img/11.jpg" alt="Featured Image" /></a>
+                <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden"><a href="news/news.html">
+                      <h5 data-zanim-xs='{"delay":0}'>The growing meanace of social engineering fraud</h5>
+                    </a></div>
+                  <div class="overflow-hidden">
+                    <p class="text-500" data-zanim-xs='{"delay":0.1}'>By Robson</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.2}'>Social engineering involves the collection of information from various sources about a target...</p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" href="news/news.html">Learn More
+                        <div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
+                      </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section> -->
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!--===============================================-->
+    <!--    Footer Freearcs Pharma Services           -->
+    <!--===============================================-->
+    <footer style="background-color: #573D4E;" class="text-white">
+      <div class="container py-5 py-lg-6" style="max-width: 1800px;">
+        <div class="row g-4 g-lg-5">
+
+          <!-- Col 1 : Logo & Tagline -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="index.html">
+              <img src="./assets/img/freearcs-pharma-services_logo-white.svg" alt="Freearcs Pharma Services" style="height:3rem; width:auto;" class="mb-3" />
+            </a>
+            <!-- <p class="fst-italic mb-3" style="color: rgba(255,255,255,0.8); font-size:.875rem;">A passion For Better Health</p> -->
+            <div class="d-flex align-items-start gap-2" style="color: rgba(255,255,255,0.7); font-size:.875rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-1"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>50 Avenue des Champs-Élysées, 75008 Paris</span>
+            </div>
+            <!-- AFCROs Badge -->
+            <div class="d-inline-flex align-items-center gap-2 mt-4 px-3 py-2 rounded-3" style="background: rgba(255,255,255,0.1);">
+              <img src="./assets/img/AFCROs.png" alt="AFCROs" style="height:1.5rem; width:auto;" />
+              <span style="font-size:.75rem; color: rgba(255,255,255,0.8);">Membre AFCROs</span>
+            </div>
+          </div>
+
+          <!-- Col 2 : Liens rapides -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <p class="footer-col-title">Liens rapides</p>
+            <nav class="d-flex flex-column gap-2" style="font-size:.875rem;">
+              <a href="pages/about.html"      class="footer-nav-link">À propos</a>
+              <a href="pages/service.html"    class="footer-nav-link">Services</a>
+              <a href="#!"                    class="footer-nav-link">Expertise thérapeutique</a>
+              <a href="#!"                    class="footer-nav-link">Pourquoi nous choisir</a>
+              <a href="#!"                    class="footer-nav-link">Références</a>
+              <a href="news/newsroom.html"    class="footer-nav-link">Blog</a>
+              <a href="contact.html"          class="footer-nav-link">Contact</a>
+            </nav>
+          </div>
+
+          <!-- Col 3 : Services -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <p class="footer-col-title">Nos services</p>
+            <nav class="d-flex flex-column gap-2" style="font-size:.875rem;">
+              <a href="pages/service.html" class="footer-nav-link">Gestion de projet</a>
+              <a href="pages/service.html" class="footer-nav-link">Affaires réglementaires</a>
+              <a href="pages/service.html" class="footer-nav-link">Faisabilité &amp; Monitoring</a>
+              <a href="#!"                 class="footer-nav-link">Représentation légale</a>
+            </nav>
+          </div>
+
+          <!-- Col 4 : Contact & Social -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <p class="footer-col-title">Contact</p>
+            <div class="d-flex flex-column gap-3 mb-4" style="font-size:.875rem;">
+              <a href="mailto:contact@freearcs.com" class="footer-nav-link d-flex align-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>contact@freearcs.com</span>
+              </a>
+              <a href="tel:+33179932112" class="footer-nav-link d-flex align-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+33 1 79 93 21 12</span>
+              </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <a href="https://www.linkedin.com/company/freearcs-pharma-services" target="_blank" rel="noopener noreferrer" class="footer-nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+
+            <!-- Language Switch -->
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-sm px-3 py-1 rounded" style="background:#2E9013; color:#fff; font-size:.875rem; border:none;">EN</button>
+              <button class="btn btn-sm px-3 py-1 rounded" style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); font-size:.875rem; border:none;">FR</button>
+            </div>
+          </div>
+
+        </div><!-- /.row -->
+
+        <!-- Bottom Bar -->
+        <div class="mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" style="border-top: 1px solid rgba(255,255,255,0.2);">
+          <p class="mb-0" style="font-size:.875rem; color: rgba(255,255,255,0.6);">&copy; 2025 Freearcs Pharma Services. Tous droits réservés.</p>
+          <div class="d-flex align-items-center gap-4" style="font-size:.875rem; color: rgba(255,255,255,0.6);">
+            <a href="#!" class="footer-nav-link">Mentions légales</a>
+            <a href="#!" class="footer-nav-link">Politique de confidentialité</a>
+            <a href="#!" class="footer-nav-link">Cookies</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <style>
+      .footer-nav-link {
+        color: rgba(255,255,255,0.7);
+        text-decoration: none;
+        transition: color .2s;
+      }
+      .footer-nav-link:hover {
+        color: #F5A617;
+      }
+    </style>
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/popper/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/bigpicture/BigPicture.js"> </script>
+    <script src="vendors/countup/countUp.umd.js"> </script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="vendors/lodash/lodash.min.js"></script>
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/gsap/gsap.js"></script>
+    <script src="vendors/gsap/customEase.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <!-- Language switcher -->
+    <script>
+      function fpsSwitchLang(lang) {
+        document.querySelectorAll('.fps-lang-btn').forEach(function(btn) {
+          btn.classList.remove('fps-lang-active');
+        });
+        var active = document.getElementById('fps-btn-' + lang);
+        if (active) active.classList.add('fps-lang-active');
+        // TODO: implémenter le changement de langue réel
+      }
+    </script>
+
+  </body>
+
+</html>
