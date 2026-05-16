@@ -611,12 +611,12 @@ const HomePage = () => {
           <Reveal delay={0.15}>
             <Button
               asChild
-              className="bg-[#2E9013] hover:bg-[#1f6b0d] text-white font-semibold px-10 py-6 rounded-full text-base transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              className="w-full sm:w-auto bg-[#2E9013] hover:bg-[#1f6b0d] text-white font-semibold px-6 sm:px-10 py-4 sm:py-6 rounded-full text-base transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               data-testid="cta-contact"
             >
-              <Link to="/contact">
+              <Link to="/contact" className="flex items-center justify-center">
                 {t('home.bookMeeting')}
-                <ArrowRight className="ml-2 w-4 h-4" />
+                <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
               </Link>
             </Button>
           </Reveal>
